@@ -27,9 +27,14 @@ public class PaulMovement : MonoBehaviour
         if (Physics2D.Raycast(transform.position, Vector3.down, 1.45f))
         {
             Grounded = true;
+            Animator.SetBool("grounded", true);
         }
-        else Grounded = false;
-        
+        else
+        {
+            Grounded = false;
+            Animator.SetBool("grounded", false);
+        }
+
         // Horizontal movement
         Horizontal = 0.0f; // -1 if left, 0 if standing, 1 if right
         if (Keyboard.current.aKey.isPressed)
@@ -45,13 +50,14 @@ public class PaulMovement : MonoBehaviour
         Animator.SetBool("running", Horizontal != 0.0f);
 
         // Jump
-        if (Keyboard.current.wKey.isPressed && Grounded)
+        if (Keyboard.current.wKey.wasPressedThisFrame && Grounded)
             Jump();
     }
 
     void Jump()
     {
-        Rigidbody2D.AddForce(Vector2.up * JumpForce);
+        Rigidbody2D.linearVelocity = new Vector2(Rigidbody2D.linearVelocity.x, 0f);
+        Rigidbody2D.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
     }
 
     private void FixedUpdate()
