@@ -11,12 +11,14 @@ public class PaulMovement : MonoBehaviour
     private Animator Animator;
     private float Horizontal;
     private bool Grounded;
+    private Vector3 InitialPosition;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         Rigidbody2D = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
+        InitialPosition = transform.position;
     }
 
     // Update is called once per frame
@@ -63,5 +65,11 @@ public class PaulMovement : MonoBehaviour
     private void FixedUpdate()
     {
         Rigidbody2D.linearVelocity = new Vector2(Horizontal, Rigidbody2D.linearVelocity.y);
+    }
+
+    public void Respawn()
+    {
+        transform.position = InitialPosition;
+        Rigidbody2D.linearVelocity = Vector2.zero;
     }
 }
