@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelExit : MonoBehaviour
 {
-    public string NextSceneName = "MainMenu"; // CAMBIAR AQUÍ para ir a otra escena
+    public string NextSceneName = "Exploration"; // CAMBIAR AQUÍ para ir a otra escena
     
     private bool PlayerNearby = false;
 

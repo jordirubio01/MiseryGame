@@ -24,6 +24,21 @@ public class GameManager : MonoBehaviour
 
     public void LoadDialogue()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Reviure");
+    }
+
+    public void LoadPlatforms()
+    {
+        SceneManager.LoadScene("Reviure");
+    }
+
+    public void LoadExploration()
+    {
+        SceneManager.LoadScene("Exploration");
+    }
+
+    public void LoadBook()
+    {
+        SceneManager.LoadScene("Book");
     }
 }

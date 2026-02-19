@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Platforms.unity
     guid: a9d075145c303664aa378246101c905f
   - enabled: 1
+    path: Assets/Scenes/Reviure.unity
+    guid: e27636fb878065b49af08a552a3060b5
+  - enabled: 1
     path: Assets/Scenes/Exploration.unity
     guid: 1ea10785db70fb04486de5a68412df79
   - enabled: 1
