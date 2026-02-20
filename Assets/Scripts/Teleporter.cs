@@ -13,10 +13,6 @@ public class Teleporter : MonoBehaviour
 
     void Update()
     {
-        /*if (PlayerNearby && RequireKeyPress && Keyboard.current.eKey.wasPressedThisFrame)
-        {
-            TeleportPlayer();
-        }*/
         if (!PlayerNearby) return;
 
         if (Mouse.current.leftButton.wasPressedThisFrame)
@@ -31,6 +27,10 @@ public class Teleporter : MonoBehaviour
             {
                 TeleportPlayer();
             }
+        }
+        else if (PlayerNearby && RequireKeyPress && Keyboard.current.qKey.wasPressedThisFrame)
+        {
+            TeleportPlayer();
         }
     }
 
