@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class DoorGlow : MonoBehaviour
+public class HighlightObject : MonoBehaviour
 {
-    public SpriteRenderer outline; // Arrastra aquí tu DoorOutline
+    public SpriteRenderer outline; // Object outline
     public float glowSpeed = 2f;   // Velocidad del resplandor
     public float maxAlpha = 1f;    // Máxima opacidad del resplandor
     private bool playerNearby = false;

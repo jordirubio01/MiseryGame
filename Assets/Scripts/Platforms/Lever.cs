@@ -18,9 +18,24 @@ public class Lever : MonoBehaviour
 
     void Update()
     {
-        if (PlayerNearby && !IsActivated && Keyboard.current.eKey.wasPressedThisFrame)
+        /*if (PlayerNearby && !IsActivated && Keyboard.current.eKey.wasPressedThisFrame)
         {
             ActivateLever();
+        }*/
+        if (!PlayerNearby) return;
+
+        if (Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            Vector2 mouseWorldPos =
+                Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+
+            LayerMask mask = LayerMask.GetMask("Interactable");
+            Collider2D hit = Physics2D.OverlapPoint(mouseWorldPos, mask);
+
+            if (!IsActivated && hit != null && hit.gameObject == gameObject)
+            {
+                ActivateLever();
+            }
         }
     }
 
@@ -52,7 +67,7 @@ public class Lever : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             PlayerNearby = true;
-            Debug.Log("Press E to activate lever");
+            Debug.Log("Clica l'objecte");
         }
     }
 

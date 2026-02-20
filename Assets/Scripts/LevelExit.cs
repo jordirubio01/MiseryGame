@@ -10,9 +10,24 @@ public class LevelExit : MonoBehaviour
 
     void Update()
     {
-        if (PlayerNearby && Keyboard.current.eKey.wasPressedThisFrame)
+        /*if (PlayerNearby && Keyboard.current.eKey.wasPressedThisFrame)
         {
             ExitLevel();
+        }*/
+        if (!PlayerNearby) return;
+
+        if (Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            Vector2 mouseWorldPos =
+                Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+
+            LayerMask mask = LayerMask.GetMask("Interactable");
+            Collider2D hit = Physics2D.OverlapPoint(mouseWorldPos, mask);
+
+            if (hit != null && hit.gameObject == gameObject)
+            {
+                ExitLevel();
+            }
         }
     }
 

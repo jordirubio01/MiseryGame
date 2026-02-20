@@ -9,15 +9,32 @@ public class Teleporter : MonoBehaviour
     private bool PlayerNearby = false;
     private GameObject PlayerObject;
 
+    public RoomCameraFollow RoomCameraFollow; // For certain levels (house)
+
     void Update()
     {
-        if (PlayerNearby && RequireKeyPress && Keyboard.current.eKey.wasPressedThisFrame)
+        /*if (PlayerNearby && RequireKeyPress && Keyboard.current.eKey.wasPressedThisFrame)
         {
             TeleportPlayer();
+        }*/
+        if (!PlayerNearby) return;
+
+        if (Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            Vector2 mouseWorldPos =
+                Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+
+            LayerMask mask = LayerMask.GetMask("Interactable");
+            Collider2D hit = Physics2D.OverlapPoint(mouseWorldPos, mask);
+
+            if (hit != null && hit.gameObject == gameObject)
+            {
+                TeleportPlayer();
+            }
         }
     }
 
-    void TeleportPlayer()
+        void TeleportPlayer()
     {
         if (PlayerObject != null && DestinationPoint != null)
         {
@@ -29,7 +46,10 @@ public class Teleporter : MonoBehaviour
             {
                 rb.linearVelocity = Vector2.zero;
             }
-            
+            if (RoomCameraFollow != null)
+            {
+                RoomCameraFollow.MoveTo(DestinationPoint.position);
+            }
             Debug.Log("Teleported!");
         }
     }
@@ -43,11 +63,15 @@ public class Teleporter : MonoBehaviour
             
             if (RequireKeyPress)
             {
-                Debug.Log("Press E to teleport");
+                Debug.Log("Fes clic sobre l'objecte");
             }
             else
             {
                 TeleportPlayer();
+                if (RoomCameraFollow != null)
+                {
+                    RoomCameraFollow.MoveTo(DestinationPoint.position);
+                }
             }
         }
     }
