@@ -11,6 +11,13 @@ public class Teleporter : MonoBehaviour
 
     public RoomCameraFollow RoomCameraFollow; // For certain levels (house)
 
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     void Update()
     {
         if (!PlayerNearby) return;
@@ -38,6 +45,11 @@ public class Teleporter : MonoBehaviour
     {
         if (PlayerObject != null && DestinationPoint != null)
         {
+            if (audioSource != null)
+            {
+                audioSource.PlayOneShot(audioSource.clip);
+            }
+
             PlayerObject.transform.position = DestinationPoint.position;
             
             // Reset velocity to avoid bugs

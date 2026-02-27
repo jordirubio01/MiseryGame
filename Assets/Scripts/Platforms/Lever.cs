@@ -37,6 +37,10 @@ public class Lever : MonoBehaviour
                 ActivateLever();
             }
         }
+        else if (PlayerNearby && Keyboard.current.qKey.wasPressedThisFrame)
+        {
+            ActivateLever();
+        }
     }
 
     void ActivateLever()

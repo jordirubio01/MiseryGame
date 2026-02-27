@@ -13,12 +13,16 @@ public class PaulMovement : MonoBehaviour
     private bool Grounded;
     private Vector3 InitialPosition;
 
+    private AudioSource audioSource;
+    public AudioClip FootstepClip;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         Rigidbody2D = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
         InitialPosition = transform.position;
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -54,6 +58,24 @@ public class PaulMovement : MonoBehaviour
         // Jump
         if (Keyboard.current.wKey.wasPressedThisFrame && Grounded)
             Jump();
+
+        // So de passos
+        if (Grounded && Horizontal != 0)
+        {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.clip = FootstepClip;
+                audioSource.loop = true;
+                audioSource.Play();
+            }
+        }
+        else
+        {
+            if (audioSource.isPlaying)
+            {
+                audioSource.Stop();
+            }
+        }
     }
 
     void Jump()

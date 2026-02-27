@@ -29,6 +29,10 @@ public class LevelExit : MonoBehaviour
                 ExitLevel();
             }
         }
+        else if (PlayerNearby && Keyboard.current.qKey.wasPressedThisFrame)
+        {
+            ExitLevel();
+        }
     }
 
     void ExitLevel()

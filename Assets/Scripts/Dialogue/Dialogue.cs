@@ -1,6 +1,7 @@
 using System.Collections;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Dialogue : MonoBehaviour
 {
@@ -34,7 +35,12 @@ public class Dialogue : MonoBehaviour
             MoveTowardsPlayer();
         }
 
-        if (isPlayerInRange && Input.GetButtonDown("Fire1"))
+        if (!isPlayerInRange)
+        {
+            return;
+        }
+
+        else if (Mouse.current.leftButton.wasPressedThisFrame || Keyboard.current.qKey.wasPressedThisFrame)
         {
             if (!didDialogueStart)
             {

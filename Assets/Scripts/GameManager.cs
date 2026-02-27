@@ -24,12 +24,12 @@ public class GameManager : MonoBehaviour
 
     public void LoadDialogue()
     {
-        SceneManager.LoadScene("Reviure");
+        SceneManager.LoadScene("Platform");
     }
 
     public void LoadPlatforms()
     {
-        SceneManager.LoadScene("Reviure");
+        SceneManager.LoadScene("Platform");
     }
 
     public void LoadExploration()
