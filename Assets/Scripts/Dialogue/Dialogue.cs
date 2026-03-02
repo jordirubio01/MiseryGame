@@ -30,11 +30,6 @@ public class Dialogue : MonoBehaviour
 
     void Update()
     {
-        if (!hasReachedPlayer && !isPlayerInRange)
-        {
-            MoveTowardsPlayer();
-        }
-
         if (!isPlayerInRange)
         {
             return;
@@ -55,6 +50,15 @@ public class Dialogue : MonoBehaviour
                 StopAllCoroutines();
                 dialogueText.text = dialogueLines[lineIndex];
             }
+        }
+    }
+
+    void FixedUpdate()
+    {
+        if (!hasReachedPlayer && !isPlayerInRange)
+        {
+            Debug.Log(rb.linearVelocity);
+            MoveTowardsPlayer();
         }
     }
 
@@ -95,6 +99,7 @@ public class Dialogue : MonoBehaviour
         {
             didDialogueStart = false;
             dialoguePanel.SetActive(false);
+            GameManager.Instance.LoadPlatforms();
         }
     }
 

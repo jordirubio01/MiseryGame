@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
@@ -69,6 +70,16 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    private void Update()
+    {
+        if (Keyboard.current.digit0Key.wasPressedThisFrame) SceneManager.LoadScene("MainMenu");
+        if (Keyboard.current.digit1Key.wasPressedThisFrame) LoadDialogue();
+        if (Keyboard.current.digit2Key.wasPressedThisFrame) LoadPlatforms();
+        if (Keyboard.current.digit3Key.wasPressedThisFrame) LoadExploration();
+        if (Keyboard.current.digit4Key.wasPressedThisFrame) LoadBook();
+    }
+
     public void ResetVariables()
     {
         salut = 1;
@@ -83,7 +94,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadDialogue()
     {
-        SceneManager.LoadScene("Platform");
+        SceneManager.LoadScene("Dialogue");
     }
 
     public void LoadPlatforms()
