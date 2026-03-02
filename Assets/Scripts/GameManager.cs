@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
         Reviure,
         Destrossar,
         Escoltar,
-        Play,
+        Reproduir,
         Matar,
         Amagar,
         Protegir,
@@ -63,12 +63,22 @@ public class GameManager : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
+
+        idees.Clear();
+        pistes.Clear();
+
+        foreach (Idea idea in System.Enum.GetValues(typeof(Idea)))
+            idees.Add(idea, false);
+
+        foreach (Pista pista in System.Enum.GetValues(typeof(Pista)))
+            pistes.Add(pista, false);
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         salut = 1;
+        Debug.Log("Resolución actual: " + Screen.width + "x" + Screen.height);
         SceneManager.LoadScene("MainMenu");
     }
 
@@ -98,6 +108,7 @@ public class GameManager : MonoBehaviour
 
         foreach (Idea idea in System.Enum.GetValues(typeof(Idea)))
             idees[idea] = false;
+
 
         foreach (Pista pista in System.Enum.GetValues(typeof(Pista)))
             pistes[pista] = false;
