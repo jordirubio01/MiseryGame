@@ -1,5 +1,7 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class Teleporter : MonoBehaviour
 {
@@ -15,6 +17,9 @@ public class Teleporter : MonoBehaviour
     private GameObject PlayerObject;
 
     public RoomCameraFollow RoomCameraFollow; // For certain levels (house)
+    public Image FadeImage;
+    private float FadeInDuration = 0.2f;
+    private float FadeOutDuration = 0.2f;
 
     private AudioSource audioSource;
 
@@ -48,6 +53,13 @@ public class Teleporter : MonoBehaviour
 
     void TeleportPlayer()
     {
+        StartCoroutine(TeleportWithFade());
+    }
+
+    IEnumerator TeleportWithFade()
+    {
+        if (FadeImage != null) yield return StartCoroutine(Fade(0, 1, FadeInDuration)); // Fade a negro
+
         Transform targetDestination = DestinationPoint;
 
         if (DependsOnLives)
@@ -57,7 +69,7 @@ public class Teleporter : MonoBehaviour
             else targetDestination = Destination3Lives;
         }
 
-        if (PlayerObject != null && DestinationPoint != null)
+        if (PlayerObject != null && targetDestination != null)
         {
             if (audioSource != null)
             {
@@ -65,19 +77,40 @@ public class Teleporter : MonoBehaviour
             }
 
             PlayerObject.transform.position = targetDestination.position;
-            
-            // Reset velocity to avoid bugs
+
             Rigidbody2D rb = PlayerObject.GetComponent<Rigidbody2D>();
             if (rb != null)
             {
                 rb.linearVelocity = Vector2.zero;
             }
+
             if (RoomCameraFollow != null)
             {
                 RoomCameraFollow.MoveTo(targetDestination.position);
             }
+
             Debug.Log("Teleported!");
         }
+        if (FadeImage != null)
+        {
+            yield return new WaitForSeconds(0.5f);
+            yield return StartCoroutine(Fade(1, 0, FadeOutDuration)); // Volver a la escena
+        }
+    }
+
+    IEnumerator Fade(float startAlpha, float endAlpha, float duration)
+    {
+        float time = 0;
+        UnityEngine.Color color = FadeImage.color;
+
+        while (time<duration)
+        {
+            float alpha = Mathf.Lerp(startAlpha, endAlpha, time / duration);
+            FadeImage.color = new UnityEngine.Color(color.r, color.g, color.b, alpha);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        FadeImage.color = new UnityEngine.Color(color.r, color.g, color.b, endAlpha);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
