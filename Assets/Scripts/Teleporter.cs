@@ -5,7 +5,12 @@ public class Teleporter : MonoBehaviour
 {
     public Transform DestinationPoint;
     public bool RequireKeyPress = true;
-    
+
+    [Header("Lives Based Teleport")]
+    public bool DependsOnLives = false;
+    public Transform Destination2Lives;
+    public Transform Destination3Lives;
+
     private bool PlayerNearby = false;
     private GameObject PlayerObject;
 
@@ -41,8 +46,17 @@ public class Teleporter : MonoBehaviour
         }
     }
 
-        void TeleportPlayer()
+    void TeleportPlayer()
     {
+        Transform targetDestination = DestinationPoint;
+
+        if (DependsOnLives)
+        {
+            if (GameManager.salut <= 1) targetDestination = DestinationPoint;
+            else if (GameManager.salut <= 3) targetDestination = Destination2Lives;
+            else targetDestination = Destination3Lives;
+        }
+
         if (PlayerObject != null && DestinationPoint != null)
         {
             if (audioSource != null)
@@ -50,7 +64,7 @@ public class Teleporter : MonoBehaviour
                 audioSource.PlayOneShot(audioSource.clip);
             }
 
-            PlayerObject.transform.position = DestinationPoint.position;
+            PlayerObject.transform.position = targetDestination.position;
             
             // Reset velocity to avoid bugs
             Rigidbody2D rb = PlayerObject.GetComponent<Rigidbody2D>();
@@ -60,7 +74,7 @@ public class Teleporter : MonoBehaviour
             }
             if (RoomCameraFollow != null)
             {
-                RoomCameraFollow.MoveTo(DestinationPoint.position);
+                RoomCameraFollow.MoveTo(targetDestination.position);
             }
             Debug.Log("Teleported!");
         }
