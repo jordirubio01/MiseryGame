@@ -68,6 +68,7 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        salut = 1;
         SceneManager.LoadScene("MainMenu");
     }
 
@@ -78,6 +79,16 @@ public class GameManager : MonoBehaviour
         if (Keyboard.current.digit2Key.wasPressedThisFrame) LoadPlatforms();
         if (Keyboard.current.digit3Key.wasPressedThisFrame) LoadExploration();
         if (Keyboard.current.digit4Key.wasPressedThisFrame) LoadBook();
+        if (Keyboard.current.numpadPlusKey.wasPressedThisFrame && salut < 6)
+        {
+            salut += 1;
+            Debug.Log("Salut: " + salut + " | Time: " + Time.time);
+        }
+        if (Keyboard.current.numpadMinusKey.wasPressedThisFrame && salut > 0)
+        {
+            salut -= 1;
+            Debug.Log("Salut: " + salut + " | Time: " + Time.time);
+        }
     }
 
     public void ResetVariables()
