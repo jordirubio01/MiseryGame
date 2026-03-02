@@ -1,4 +1,4 @@
-using System.Collections;
+Ôªøusing System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -6,10 +6,73 @@ using UnityEngine.UI;
 
 public class ButtonMessage : MonoBehaviour
 {
-    public TextMeshProUGUI actionText; // Primer Text que se actualizar·
-    public TextMeshProUGUI objectsText; // Segundo Text que se actualizar·
+    public TextMeshProUGUI actionText;   // Text de acciones (Ideas)
+    public TextMeshProUGUI objectsText;  // Text de objetos (Pistas)
 
-    // Primer conjunto de botones
+    public enum TipoBoton
+    {
+        Idea,
+        Pista
+    }
+
+    [Header("Config del bot√≥n")]
+    public TipoBoton tipoBoton;
+
+    // Se usa solo si tipoBoton = Idea
+    public GameManager.Idea ideaNecesaria;
+
+    // Se usa solo si tipoBoton = Pista
+    public GameManager.Pista pistaNecesaria;
+
+    private Button button;
+
+    void Awake()
+    {
+        button = GetComponent<Button>();
+    }
+
+    void Start()
+    {
+        ActualizarEstadoBoton();
+    }
+
+    void OnEnable()
+    {
+        ActualizarEstadoBoton();
+    }
+
+    void Update()
+    {
+        ActualizarEstadoBoton();
+    }
+
+    void ActualizarEstadoBoton()
+    {
+        if (button == null) return;
+
+        if (tipoBoton == TipoBoton.Idea)
+        {
+            if (!GameManager.idees.ContainsKey(ideaNecesaria))
+            {
+                button.interactable = false;
+                return;
+            }
+
+            button.interactable = GameManager.idees[ideaNecesaria];
+        }
+        else if (tipoBoton == TipoBoton.Pista)
+        {
+            if (!GameManager.pistes.ContainsKey(pistaNecesaria))
+            {
+                button.interactable = false;
+                return;
+            }
+
+            button.interactable = GameManager.pistes[pistaNecesaria];
+        }
+    }
+
+    // Botones de Idea (acci√≥n)
     public void CopyButtonTextToAction(TextMeshProUGUI btnText)
     {
         if (btnText != null && actionText != null)
@@ -18,7 +81,7 @@ public class ButtonMessage : MonoBehaviour
         }
     }
 
-    // Segundo conjunto de botones
+    // Botones de Pista (objeto)
     public void CopyButtonTextToMessage(TextMeshProUGUI btnText)
     {
         if (btnText != null && objectsText != null)
