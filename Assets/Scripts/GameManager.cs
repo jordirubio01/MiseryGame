@@ -40,6 +40,15 @@ public class GameManager : MonoBehaviour
 
     public static int salut; // de 0 a 6
     public static int bucle; // de 1 a 6
+    public static Canvi ultimCanvi = null;
+
+
+    public void RegistrarCanvi(Idea idea, Pista pista)
+    {
+        ultimCanvi = new Canvi(idea, pista);
+        bucle++;
+        LoadDialogue();
+    }
 
     // Canvi fet a la ronda anterior
     public class Canvi
@@ -112,6 +121,8 @@ public class GameManager : MonoBehaviour
 
         foreach (Pista pista in System.Enum.GetValues(typeof(Pista)))
             pistes[pista] = false;
+
+        ultimCanvi = null;
     }
 
     public void LoadDialogue()

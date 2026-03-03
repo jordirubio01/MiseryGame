@@ -89,4 +89,19 @@ public class ButtonMessage : MonoBehaviour
             objectsText.text = btnText.text;
         }
     }
+
+    [Header("Referència al BookManager")]
+    public BookManager bookManager;
+
+    public void SelectIdea()
+    {
+        if (bookManager != null)
+            bookManager.SeleccionarIdea((int)ideaNecesaria);
+    }
+
+    public void SelectPista()
+    {
+        if (bookManager != null)
+            bookManager.SeleccionarPista((int)pistaNecesaria);
+    }
 }

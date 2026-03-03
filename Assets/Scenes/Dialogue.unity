@@ -2259,6 +2259,151 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 979685755}
   m_CullTransparentMesh: 1
+--- !u!1 &1035166525
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1035166527}
+  - component: {fileID: 1035166526}
+  m_Layer: 0
+  m_Name: DialogueSelector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1035166526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035166525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1c9a1bb620fef34bb508c81c0adb671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSelector
+  annieDialogue: {fileID: 0}
+  dialogueInicial:
+  - "ANNIE: Paul? Paauuul\u2026 Soc la teva fan n\xFAmero 1, SOC LA TEVA FAN N\xDAMERO
+    1. Quina alegria que estiguis despert! M\u2019encanten les teves novel\xB7les
+    de Misery! i\u2026 T\u2019he dit ja que soc la teva fan n\xFAmero 1?  "
+  - 'PAUL: ...'
+  - "ANNIE: He vist que has escrit un nou llibre de Misery. Est\xE0s segur que vols
+    que sigui l\u2019\xFAltim?  "
+  - "PAUL: S\u2026 Si\u2026 "
+  - "ANNIE: (El seu somriure desapareix de cop. La veu se li torna freda i cridanera)
+    S\xCD?! Doncs t'equivoques! L'he llegit, Paul... He llegit el manuscrit sencer
+    mentre dormies. I \xE9s una aut\xE8ntica BASTARDADA!  "
+  - 'PAUL: Ah! '
+  - "ANNIE: Com has pogut fer-li aix\xF2 a la meva Misery?! \xC9s injust! Bruta i
+    mentidera porqueria! No, no, no... Aix\xF2 no pot quedar aix\xED. L'haur\xE0s
+    de reescriure. Ho sents? L'haur\xE0s de reescriure sencer fins que quedi perfecte!  "
+  - "ANNIE: I t'asseguro que si no t'afanyes, o si tornes a embrutar el nom de la
+    Misery... aquestes cames trencades seran el menor dels teus problemes. Hi haur\xE0
+    conseq\xFC\xE8ncies, Paul. Greus conseq\xFC\xE8ncies.  "
+  - "ANNIE: (Canviant a un to dol\xE7 de cop i volta) Per\xF2 shhh... avui has patit
+    molt, pobret meu. Aqu\xED tens la teva medicaci\xF3. Pren-te-la. (Li fa empassar
+    les pastilles). Et faran adormir d'aqu\xED a uns minuts. Has d'estar ben descansat
+    per dem\xE0 comen\xE7ar a treballar. Bona nit, senyor Sheldon. "
+  - "PAUL: (Murmurant per a si mateix, amb la visi\xF3 borrosa i la veu feble) D\xE9u
+    meu... estic atrapat amb una psic\xF2pata... Qu\xE8 collons l'ha fet enfurismar
+    tant d'aquell manuscrit?  "
+  - "PAUL: Ha de ser la mort de la Misery... O potser que aquell male\xEFt assass\xED
+    s'hagi sortit amb la seva? O... potser \xE9s l'escena final... quan es trenca
+    l'ampolla de Dom P\xE9rignon contra el terra com a s\xEDmbol que la saga s'ha
+    acabat per sempre...  "
+  - "PAUL: (Badalla, Comen\xE7a a notar l\u2019efecte de les pastilles) Male\xEFda
+    sigui... haig de trobar la manera d'arreglar-ho abans que em faci mal... Haig
+    de pensar en alguna cosa... alguna idea...  "
+  dialogueCases:
+  - idea: 0
+    pista: 0
+    lines:
+    - "ANNIE:(To alegre) Quina alegria! La Misery \xE9s viva! No s\xE9 si hagu\xE9s
+      pogut passar un  dia m\xE9s pensant en qu\xE8 s\u2019havia fet d\u2019ella\u2026
+      \xC9s el millor dia de la meva vida!"
+    - "ANNIE: I ara qu\xE8? S\u2019enamorar\xE0 perdudament d\u2019un majestu\xF3s
+      home o seguir\xE0 amb la seva vida aventuresca? Ai quina intriga! No puc esperar
+      per seguir llegint!"
+    - "ANNIE: (To amena\xE7ant) Espero que la resta de la historia estigui a l\u2019al\xE7ada
+      o hi haur\xE0 greus conseq\xFC\xE8ncies.\r\n "
+    - "PAUL: Sabia que t\u2019encantaria\u2026 per\xF2 haur\xE0s d\u2019esperar una
+      mica per saber com segueix. Ja saps que els bons autors han de rumiar prou
+      per escriure com cal. L\u2019espera valdr\xE0 la pena, t\u2019ho prometo. "
+  - idea: 1
+    pista: 0
+    lines:
+    - "ANNIE: Com\u2026 com\u2026 COM HAS POGUT FER AIX\xD2 A LA MISERY?! Ella \xE9s
+      pura, perfecta! No tens dret a tocar-la! No tens dret a res! NI TAN SOLS A
+      VIURE! (L\u2019Annie li estavella al cap la palanca amb que va obrir la porta
+      del cotxe per salvar-lo de l\u2019accident). "
+  - idea: 4
+    pista: 1
+    lines:
+    - "ANNIE: Ai, John\u2026 Alg\xFA tan repugnant com tu nom\xE9s podia acabar aix\xED. 
+      No \xE9s culpa teva, suposo\u2026 per\xF2 tens el mateix nom, la mateixa manera
+      d\u2019actuar\u2026"
+    - "ANNIE: Cada vegada que se\u2019t mencionava, era com tornar a sentir aquell
+      menyspreu, aquella fredor. La Misery no es mereix alg\xFA aix\xED a prop seu!
+      \r\n "
+    - "ANNIE: Paul, veig que faig b\xE9 sent la teva fan n\xFAmero 1. Sembla que
+      est\xE0s aprenent dels teus greus errors\u2026 continua aix\xED.\r\n "
+  - idea: 4
+    pista: 7
+    lines:
+    - "ANNIE: (Trista) Michelle...? NO! LA MICHELLE NO!\r\n "
+    - "ANNIE: (Amb r\xE0bia) Com t'atreveixes a embrutar el seu nom d\u2019aquesta
+      manera tan cruel?! Ella \xE9s un \xE0ngel! \xC9s l'\xFAnica que m'ent\xE9n!
+      I tu... tu goses matar-la una altra vegada a la teva fastigosa novel\xB7la?!"
+    - "ANNIE: Ets pitjor que la resta, Paul! Ets un monstre que destrossa tot el
+      que \xE9s pur, i els monstres mereixen ser castigats durament! \r\n "
+  - idea: 4
+    pista: 0
+    lines:
+    - "ANNIE: T\u2019havia avisat Paul\u2026 T\u2019HAVIA AVISAT! Despr\xE9s de tot
+      el que he fet per tu... Et dono l'oportunitat de redimir-te, d'arreglar la
+      teva fastigosa obra i de salvar la meva preciosa Misery, i tu... la tornes
+      a assassinar?!\r\n "
+    - "ANNIE: ETS UN ASSASS\xCD, PAUL SHELDON! Un assass\xED despietat! I els assassins
+      no mereixen clem\xE8ncia... Aquest cop, de veritat que et penso ensenyar qu\xE8
+      significa realment patir!\r\n "
+  - idea: 4
+    pista: 2
+    lines:
+    - "ANNIE: Paul\u2026 No pot ser que siguis aix\xED de cruel per matar a un home
+      en certa manera\u2026 innocent\u2026 Vull que mai trobi l\u2019amor, perqu\xE8
+      \xE9s el qu\xE8 \xE9s mereix, per\xF2 d'aqu\xED a matar-lo\u2026hi ha un pas
+      de gegant\u2026\r\n "
+    - "ANNIE: Ai Paul\u2026 Realment veig que ets una persona boja sense cor. \r\n "
+    - "ANNIE: (enfurismada) ETS UN MONSTRE! ETS UN MONSTRE QUE NO VALORA LA VIDA!
+      Et penses que pots anar decidint qui viu i qui mor com si fossis un D\xE9u?
+      Doncs t'equivoques, Paul... t'equivoques!\r "
+  - idea: 4
+    pista: 3
+    lines:
+    - "ANNIE: L\u2019HOME DE LA MEVA VIDA\u2026 \xE9s mort, i tu, Paul, ets l'assass\xED.
+      Ai el meu pobre Mr.Sheldon\u2026 Far\xE9 que te\u2019n penedeixis per sempre! "
+--- !u!4 &1035166527
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035166525}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1050235943
 GameObject:
   m_ObjectHideFlags: 0
@@ -2855,7 +3000,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00012207031, y: -0.000030517578}
+  m_AnchoredPosition: {x: 0.00012207031, y: -0.000061035156}
   m_SizeDelta: {x: 1105, y: 504}
   m_Pivot: {x: 1, y: 1}
 --- !u!1 &1567899138
@@ -4086,3 +4231,4 @@ SceneRoots:
   - {fileID: 1291489095}
   - {fileID: 2044387782}
   - {fileID: 510417202}
+  - {fileID: 1035166527}

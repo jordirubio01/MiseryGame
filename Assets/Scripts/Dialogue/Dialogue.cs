@@ -133,4 +133,9 @@ public class Dialogue : MonoBehaviour
             dialogueMark.SetActive(false);
         }
     }
+
+    public void SetDialogueLines(string[] lines)
+    {
+        dialogueLines = lines;
+    }
 }
