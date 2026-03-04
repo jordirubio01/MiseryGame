@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3544522191544230476}
   - component: {fileID: 6031302087666567285}
   - component: {fileID: 1195082587218669780}
+  - component: {fileID: 2992041255517264544}
   m_Layer: 3
   m_Name: Object Outline
   m_TagString: Untagged
@@ -252,6 +253,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2992041255517264544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950829195572096380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfb51e3054d0f604aba0a921b13d80e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
+  description: He trobat un nou objecte...
+  objectSprite: {fileID: 0}
 --- !u!1 &3233994106321760189
 GameObject:
   m_ObjectHideFlags: 0
