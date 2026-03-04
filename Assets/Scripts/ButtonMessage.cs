@@ -34,6 +34,7 @@ public class ButtonMessage : MonoBehaviour
     void Start()
     {
         ActualizarEstadoBoton();
+        button.onClick.AddListener(OnButtonClick);
     }
 
     void OnEnable()
@@ -57,7 +58,6 @@ public class ButtonMessage : MonoBehaviour
                 button.interactable = false;
                 return;
             }
-
             button.interactable = GameManager.idees[ideaNecesaria];
         }
         else if (tipoBoton == TipoBoton.Pista)
@@ -67,41 +67,34 @@ public class ButtonMessage : MonoBehaviour
                 button.interactable = false;
                 return;
             }
-
             button.interactable = GameManager.pistes[pistaNecesaria];
         }
     }
 
-    // Botones de Idea (acción)
-    public void CopyButtonTextToAction(TextMeshProUGUI btnText)
+    void OnButtonClick()
     {
-        if (btnText != null && actionText != null)
+        // Actualiza los textos visibles
+        if (tipoBoton == TipoBoton.Idea)
         {
-            actionText.text = btnText.text;
+            if (actionText != null)
+            {
+                actionText.text = ideaNecesaria.ToString();
+                Debug.Log("Idea seleccionada (texto): " + actionText.text);
+            }
+            // Guarda en GameManager
+            GameManager.idea_escogida = ideaNecesaria;
+            Debug.Log("Idea global seleccionada: " + GameManager.idea_escogida);
         }
-    }
-
-    // Botones de Pista (objeto)
-    public void CopyButtonTextToMessage(TextMeshProUGUI btnText)
-    {
-        if (btnText != null && objectsText != null)
+        else if (tipoBoton == TipoBoton.Pista)
         {
-            objectsText.text = btnText.text;
+            if (objectsText != null)
+            {
+                objectsText.text = pistaNecesaria.ToString();
+                Debug.Log("Pista seleccionada (texto): " + objectsText.text);
+            }
+            // Guarda en GameManager
+            GameManager.pista_escogida = pistaNecesaria;
+            Debug.Log("Pista global seleccionada: " + GameManager.pista_escogida);
         }
-    }
-
-    [Header("Referència al BookManager")]
-    public BookManager bookManager;
-
-    public void SelectIdea()
-    {
-        if (bookManager != null)
-            bookManager.SeleccionarIdea((int)ideaNecesaria);
-    }
-
-    public void SelectPista()
-    {
-        if (bookManager != null)
-            bookManager.SeleccionarPista((int)pistaNecesaria);
     }
 }
