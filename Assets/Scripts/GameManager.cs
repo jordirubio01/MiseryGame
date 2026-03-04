@@ -40,6 +40,10 @@ public class GameManager : MonoBehaviour
 
     public static int salut; // de 0 a 6
     public static int bucle; // de 1 a 6
+
+    public static Idea idea_escogida;
+    public static Pista pista_escogida;
+
     public static Canvi ultimCanvi = null;
 
 
@@ -120,7 +124,7 @@ public class GameManager : MonoBehaviour
 
 
         foreach (Pista pista in System.Enum.GetValues(typeof(Pista)))
-            pistes[pista] = false;
+            pistes[pista] = true;
 
         ultimCanvi = null;
     }
