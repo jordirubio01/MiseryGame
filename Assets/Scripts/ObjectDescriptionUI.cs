@@ -10,11 +10,13 @@ public class ObjectDescriptionUI : MonoBehaviour
     public GameObject panel;
     public Image objectImage;
     public TMP_Text descriptionText;
+    public Button NextLevelButton;
 
     void Awake()
     {
         Instance = this;
         panel.SetActive(false);
+        NextLevelButton.gameObject.SetActive(false);
     }
 
     void Update()

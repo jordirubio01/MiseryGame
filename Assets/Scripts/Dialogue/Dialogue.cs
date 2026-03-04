@@ -22,6 +22,8 @@ public class Dialogue : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
 
+    public LevelExit levelexit;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -99,7 +101,7 @@ public class Dialogue : MonoBehaviour
         {
             didDialogueStart = false;
             dialoguePanel.SetActive(false);
-            GameManager.Instance.LoadPlatforms();
+            levelexit.ExitLevel();
         }
     }
 

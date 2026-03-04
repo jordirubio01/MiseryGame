@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class InteractableObject : MonoBehaviour
 {
     public bool RequireKeyPress = true;
+    public bool NextLevelButton = false;
 
     public string description;
     public Sprite objectSprite;
@@ -44,6 +45,9 @@ public class InteractableObject : MonoBehaviour
     void ShowDescription()
     {
         ObjectDescriptionUI.Instance.Show(objectSprite, description);
+        // Activar/desactivar botó de següent nivell
+        if (ObjectDescriptionUI.Instance.NextLevelButton != null)
+            ObjectDescriptionUI.Instance.NextLevelButton.gameObject.SetActive(NextLevelButton);
     }
 
     void OnTriggerEnter2D(Collider2D other)

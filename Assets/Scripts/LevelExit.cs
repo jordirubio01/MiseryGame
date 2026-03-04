@@ -1,60 +1,26 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class LevelExit : MonoBehaviour
 {
     public string NextSceneName = "Exploration"; // CAMBIAR AQUÍ para ir a otra escena
-    
-    private bool PlayerNearby = false;
+    public FadeOut fadeOut; // arrastra el FadeOut en el inspector
 
-    void Update()
+    public void ExitLevel()
     {
-        /*if (PlayerNearby && Keyboard.current.eKey.wasPressedThisFrame)
-        {
-            ExitLevel();
-        }*/
-        if (!PlayerNearby) return;
-
-        if (Mouse.current.leftButton.wasPressedThisFrame)
-        {
-            Vector2 mouseWorldPos =
-                Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-
-            LayerMask mask = LayerMask.GetMask("Interactable");
-            Collider2D hit = Physics2D.OverlapPoint(mouseWorldPos, mask);
-
-            if (hit != null && hit.gameObject == gameObject)
-            {
-                ExitLevel();
-            }
-        }
-        else if (PlayerNearby && Keyboard.current.qKey.wasPressedThisFrame)
-        {
-            ExitLevel();
-        }
+        StartCoroutine(ExitLevelCoroutine());
     }
 
-    void ExitLevel()
+    private IEnumerator ExitLevelCoroutine()
     {
-        Debug.Log($"Loading scene: {NextSceneName}");
+        Debug.Log($"Starting fade before loading scene: {NextSceneName}");
+
+        // Espera a que termine el fade
+        yield return StartCoroutine(fadeOut.FadeOutCoroutine());
+
+        // Cargar escena
         SceneManager.LoadScene(NextSceneName);
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            PlayerNearby = true;
-            Debug.Log("Press E to exit level");
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            PlayerNearby = false;
-        }
     }
 }
