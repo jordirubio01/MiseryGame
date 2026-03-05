@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
@@ -101,6 +102,7 @@ public class GameManager : MonoBehaviour
         if (Keyboard.current.digit2Key.wasPressedThisFrame) LoadPlatforms();
         if (Keyboard.current.digit3Key.wasPressedThisFrame) LoadExploration();
         if (Keyboard.current.digit4Key.wasPressedThisFrame) LoadBook();
+        if (Keyboard.current.digit5Key.wasPressedThisFrame) RegistrarCanvi(Idea.Reviure, Pista.Misery);
         if (Keyboard.current.digit6Key.wasPressedThisFrame) LoadChoose();
         if (Keyboard.current.digit7Key.wasPressedThisFrame) LoadBad();
         if (Keyboard.current.digit8Key.wasPressedThisFrame) LoadNeutral();

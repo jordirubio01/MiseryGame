@@ -1993,7 +1993,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000030517578}
+  m_AnchoredPosition: {x: 0, y: 0.000061035156}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &646088061
@@ -2364,7 +2364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1c9a1bb620fef34bb508c81c0adb671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSelector
-  annieDialogue: {fileID: 0}
+  annieDialogue: {fileID: 258131437}
   dialogueInicial:
   - "ANNIE: Paul? Paauuul\u2026 Soc la teva fan n\xFAmero 1, SOC LA TEVA FAN N\xDAMERO
     1. Quina alegria que estiguis despert! M\u2019encanten les teves novel\xB7les
