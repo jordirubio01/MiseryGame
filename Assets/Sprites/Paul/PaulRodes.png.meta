@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 3963e453fa5bfbc468ad42b6117f201d
+guid: 1445d5adace8cd242a2f6468b6a2ebc3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7221742885569126795
-    second: silla_ruedas_0
+      213: 5915379166111440509
+    second: PaulRodes_0
   - first:
-      213: -993957771038433216
-    second: silla_ruedas_1
+      213: -3352379203040920786
+    second: PaulRodes_1
   - first:
-      213: 3257602731674284597
-    second: silla_ruedas_2
+      213: 5226211170027202864
+    second: PaulRodes_2
   - first:
-      213: 3680526296932067113
-    second: silla_ruedas_3
+      213: 7554384469756504690
+    second: PaulRodes_3
   - first:
-      213: -9056123674058132489
-    second: silla_ruedas_4
+      213: 4488115442053682454
+    second: PaulRodes_4
   - first:
-      213: -8929729859603982209
-    second: silla_ruedas_5
+      213: 3548390788650362574
+    second: PaulRodes_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 350
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,133 +115,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: silla_ruedas_0
+      name: PaulRodes_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 62
+        x: 116
+        y: 2
         width: 188
         height: 235
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b816d8954e8c83460800000000000000
-      internalID: 7221742885569126795
+      spriteID: d7e91d3b206a71250800000000000000
+      internalID: 5915379166111440509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: silla_ruedas_1
+      name: PaulRodes_1
       rect:
         serializedVersion: 2
-        x: 214
-        y: 62
+        x: 545
+        y: 2
         width: 199
         height: 235
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 040e3876ca0c432f0800000000000000
-      internalID: -993957771038433216
+      spriteID: e2bb65260e4f971d0800000000000000
+      internalID: -3352379203040920786
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: silla_ruedas_2
+      name: PaulRodes_2
       rect:
         serializedVersion: 2
-        x: 430
-        y: 62
+        x: 998
+        y: 2
         width: 202
-        height: 227
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 532b9c8cc64553d20800000000000000
-      internalID: 3257602731674284597
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: silla_ruedas_3
-      rect:
-        serializedVersion: 2
-        x: 649
-        y: 62
-        width: 201
         height: 235
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 927ae13ba2bd31330800000000000000
-      internalID: 3680526296932067113
+      spriteID: 03966a69e5b378840800000000000000
+      internalID: 5226211170027202864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: silla_ruedas_4
+      name: PaulRodes_3
       rect:
         serializedVersion: 2
-        x: 867
-        y: 62
-        width: 199
-        height: 224
+        x: 1442
+        y: 2
+        width: 202
+        height: 235
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7f372c5ff7f225280800000000000000
-      internalID: -9056123674058132489
+      spriteID: 27a609086a096d860800000000000000
+      internalID: 7554384469756504690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: silla_ruedas_5
+      name: PaulRodes_4
       rect:
         serializedVersion: 2
-        x: 1079
-        y: 62
-        width: 190
-        height: 227
+        x: 1889
+        y: 3
+        width: 200
+        height: 235
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f781b12210a331480800000000000000
-      internalID: -8929729859603982209
+      spriteID: 6151e8a273df84e30800000000000000
+      internalID: 4488115442053682454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PaulRodes_5
+      rect:
+        serializedVersion: 2
+        x: 2335
+        y: 2
+        width: 188
+        height: 235
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec6e5c14f9a6e3130800000000000000
+      internalID: 3548390788650362574
       vertices: []
       indices: 
       edges: []
@@ -250,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 289fbba23a838ff4d9cc3f50afa2c1cd
     internalID: 0
     vertices: []
     indices: 
@@ -260,12 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      silla_ruedas_0: 7221742885569126795
-      silla_ruedas_1: -993957771038433216
-      silla_ruedas_2: 3257602731674284597
-      silla_ruedas_3: 3680526296932067113
-      silla_ruedas_4: -9056123674058132489
-      silla_ruedas_5: -8929729859603982209
+      PaulRodes_0: 5915379166111440509
+      PaulRodes_1: -3352379203040920786
+      PaulRodes_2: 5226211170027202864
+      PaulRodes_3: 7554384469756504690
+      PaulRodes_4: 4488115442053682454
+      PaulRodes_5: 3548390788650362574
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
