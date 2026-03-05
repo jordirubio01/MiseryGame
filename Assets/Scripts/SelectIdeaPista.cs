@@ -1,5 +1,4 @@
-﻿// Archivo: SelectIdeaPista.cs
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
@@ -19,20 +18,26 @@ public class SelectIdeaPista : MonoBehaviour
 
     void OnSubmit()
     {
-        // Tomamos directamente los valores globales de GameManager
+        // Solo permitir si ambos están asignados
+        if (GameManager.idea_escogida == GameManager.Idea.None ||
+            GameManager.pista_escogida == GameManager.Pista.None)
+        {
+            Debug.LogWarning("No se ha seleccionado idea o pista aún");
+            return;
+        }
+
+        // Tomamos los valores globales
         var selectedIdea = GameManager.idea_escogida;
         var selectedPista = GameManager.pista_escogida;
 
-        // Mostramos por consola los valores
-        Debug.Log("✅ Botón Confirmar pulsado");
-        Debug.Log("Idea escogida: " + selectedIdea);
-        Debug.Log("Pista escogida: " + selectedPista);
-
-        // Actualizamos los textos visibles en la UI (opcional)
+        // Actualizamos los textos visibles (opcional)
         if (ideaText != null) ideaText.text = selectedIdea.ToString();
         if (pistaText != null) pistaText.text = selectedPista.ToString();
 
-        // Creamos el cambio en GameManager como hacías antes
+        // Registramos el cambio
         GameManager.Instance.RegistrarCanvi(selectedIdea, selectedPista);
+        Debug.Log($"✅ Canvi registrado: {selectedIdea} - {selectedPista}");
+
+        GameManager.Instance.LoadDialogue();
     }
 }

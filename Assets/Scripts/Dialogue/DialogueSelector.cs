@@ -37,6 +37,7 @@ public class DialogueSelector : MonoBehaviour
 
     private string[] TrobarDialeg(GameManager.Idea idea, GameManager.Pista pista)
     {
+
         foreach (var cas in dialogueCases)
         {
             if (cas.idea == idea && cas.pista == pista)

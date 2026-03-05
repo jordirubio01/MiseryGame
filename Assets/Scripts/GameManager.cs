@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
+using static GameManager;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class GameManager : MonoBehaviour
     // Enum idees
     public enum Idea
     {
+        None,
         Reviure,
         Destrossar,
         Escoltar,
@@ -23,6 +25,7 @@ public class GameManager : MonoBehaviour
     // Enum pistes
     public enum Pista
     {
+        None,
         Misery,
         John,
         Ian,
@@ -41,8 +44,8 @@ public class GameManager : MonoBehaviour
     public static int salut; // de 0 a 6
     public static int bucle; // de 1 a 6
 
-    public static Idea idea_escogida;
-    public static Pista pista_escogida;
+    public static Idea idea_escogida = Idea.None;
+    public static Pista pista_escogida = Pista.None;
 
     public static Canvi ultimCanvi = null;
 
@@ -89,8 +92,8 @@ public class GameManager : MonoBehaviour
             idees.Add(idea, false);
 
         foreach (Pista pista in System.Enum.GetValues(typeof(Pista)))
-            pistes.Add(pista, false);
-    }
+            pistes.Add(pista, true);
+}
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
