@@ -8,7 +8,7 @@ public class Dialogue : MonoBehaviour
     [SerializeField] private GameObject dialogueMark;
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TMP_Text dialogueText;
-    [SerializeField, TextArea(4, 6)] private string[] dialogueLines;
+    private string[] dialogueLines;
 
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 2f;
@@ -83,6 +83,7 @@ public class Dialogue : MonoBehaviour
 
     private void StartDialogue()
     {
+        Debug.Log($"[Dialogue] StartDialogue - Total línies: {dialogueLines.Length}. Primera: {dialogueLines[0]}");
         didDialogueStart = true;
         dialoguePanel.SetActive(true);
         dialogueMark.SetActive(false);
@@ -140,5 +141,6 @@ public class Dialogue : MonoBehaviour
     public void SetDialogueLines(string[] lines)
     {
         dialogueLines = lines;
+        Debug.Log($"[Dialogue] SetDialogueLines cridat amb {lines.Length} línies. Primera: {lines[0]}");
     }
 }

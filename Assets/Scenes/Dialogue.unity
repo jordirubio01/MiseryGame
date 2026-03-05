@@ -441,17 +441,6 @@ MonoBehaviour:
   dialogueMark: {fileID: 337570573}
   dialoguePanel: {fileID: 979685755}
   dialogueText: {fileID: 333294644}
-  dialogueLines:
-  - "ANNIE: (To alegre) Quina alegria! La Misery \xE9s viva! No s\xE9 si hagu\xE9s
-    pogut passar un  dia m\xE9s pensant en qu\xE8 s\u2019havia fet d\u2019ella\u2026
-    \xC9s el millor dia de la meva vida! I ara qu\xE8? S\u2019enamorar\xE0 perdudament
-    d\u2019un majestu\xF3s home o seguir\xE0 amb la seva vida aventuresca? \r\n"
-  - "ANNIE: Ai quina intriga! No puc esperar per seguir llegint!  \n(To amena\xE7ant)
-    Espero que la resta de la historia estigui a l\u2019al\xE7ada o hi haur\xE0 greus
-    conseq\xFC\xE8ncies."
-  - "PAUL: Sabia que t\u2019encantaria\u2026 per\xF2 haur\xE0s d\u2019esperar una
-    mica per saber com segueix. Ja saps que els bons autors han de rumiar prou per
-    escriure com cal. L\u2019espera valdr\xE0 la pena, t\u2019ho prometo.\r\n"
   moveSpeed: 3
   target: {fileID: 1768601734}
   levelexit: {fileID: 1398247264}
@@ -2401,8 +2390,8 @@ MonoBehaviour:
     sigui... haig de trobar la manera d'arreglar-ho abans que em faci mal... Haig
     de pensar en alguna cosa... alguna idea...  "
   dialogueCases:
-  - idea: 0
-    pista: 0
+  - idea: 1
+    pista: 1
     lines:
     - "ANNIE:(To alegre) Quina alegria! La Misery \xE9s viva! No s\xE9 si hagu\xE9s
       pogut passar un  dia m\xE9s pensant en qu\xE8 s\u2019havia fet d\u2019ella\u2026
@@ -2415,15 +2404,15 @@ MonoBehaviour:
     - "PAUL: Sabia que t\u2019encantaria\u2026 per\xF2 haur\xE0s d\u2019esperar una
       mica per saber com segueix. Ja saps que els bons autors han de rumiar prou
       per escriure com cal. L\u2019espera valdr\xE0 la pena, t\u2019ho prometo. "
-  - idea: 1
-    pista: 0
+  - idea: 2
+    pista: 1
     lines:
     - "ANNIE: Com\u2026 com\u2026 COM HAS POGUT FER AIX\xD2 A LA MISERY?! Ella \xE9s
       pura, perfecta! No tens dret a tocar-la! No tens dret a res! NI TAN SOLS A
       VIURE! (L\u2019Annie li estavella al cap la palanca amb que va obrir la porta
       del cotxe per salvar-lo de l\u2019accident). "
-  - idea: 4
-    pista: 1
+  - idea: 5
+    pista: 2
     lines:
     - "ANNIE: Ai, John\u2026 Alg\xFA tan repugnant com tu nom\xE9s podia acabar aix\xED. 
       No \xE9s culpa teva, suposo\u2026 per\xF2 tens el mateix nom, la mateixa manera
@@ -2433,8 +2422,8 @@ MonoBehaviour:
       \r\n "
     - "ANNIE: Paul, veig que faig b\xE9 sent la teva fan n\xFAmero 1. Sembla que
       est\xE0s aprenent dels teus greus errors\u2026 continua aix\xED.\r\n "
-  - idea: 4
-    pista: 7
+  - idea: 5
+    pista: 5
     lines:
     - "ANNIE: (Trista) Michelle...? NO! LA MICHELLE NO!\r\n "
     - "ANNIE: (Amb r\xE0bia) Com t'atreveixes a embrutar el seu nom d\u2019aquesta
@@ -2442,8 +2431,8 @@ MonoBehaviour:
       I tu... tu goses matar-la una altra vegada a la teva fastigosa novel\xB7la?!"
     - "ANNIE: Ets pitjor que la resta, Paul! Ets un monstre que destrossa tot el
       que \xE9s pur, i els monstres mereixen ser castigats durament! \r\n "
-  - idea: 4
-    pista: 0
+  - idea: 5
+    pista: 1
     lines:
     - "ANNIE: T\u2019havia avisat Paul\u2026 T\u2019HAVIA AVISAT! Despr\xE9s de tot
       el que he fet per tu... Et dono l'oportunitat de redimir-te, d'arreglar la
@@ -2452,8 +2441,8 @@ MonoBehaviour:
     - "ANNIE: ETS UN ASSASS\xCD, PAUL SHELDON! Un assass\xED despietat! I els assassins
       no mereixen clem\xE8ncia... Aquest cop, de veritat que et penso ensenyar qu\xE8
       significa realment patir!\r\n "
-  - idea: 4
-    pista: 2
+  - idea: 5
+    pista: 3
     lines:
     - "ANNIE: Paul\u2026 No pot ser que siguis aix\xED de cruel per matar a un home
       en certa manera\u2026 innocent\u2026 Vull que mai trobi l\u2019amor, perqu\xE8
@@ -2463,19 +2452,19 @@ MonoBehaviour:
     - "ANNIE: (enfurismada) ETS UN MONSTRE! ETS UN MONSTRE QUE NO VALORA LA VIDA!
       Et penses que pots anar decidint qui viu i qui mor com si fossis un D\xE9u?
       Doncs t'equivoques, Paul... t'equivoques!\r "
-  - idea: 4
-    pista: 3
+  - idea: 5
+    pista: 4
     lines:
     - "ANNIE: L\u2019HOME DE LA MEVA VIDA\u2026 \xE9s mort, i tu, Paul, ets l'assass\xED.
       Ai el meu pobre Mr.Sheldon\u2026 Far\xE9 que te\u2019n penedeixis per sempre! "
-  - idea: 4
-    pista: 3
+  - idea: 2
+    pista: 2
     lines:
     - "ANNIE: B\xE9... suposo que aquest noble anomenat John mereixia que li destrossessin
       la vida, de la mateixa manera que el meu cruel pare em va desheretar.  "
     - "ANNIE: M'\xE9s igual, la veritat. Per\xF2 espero que la propera vegada tinguis
       una idea m\xE9s inspiradora, Paul\u2026 "
-  - idea: 4
+  - idea: 2
     pista: 3
     lines:
     - "ANNIE: Destrossar-li la vida a l'Ian? (Riu per sota el nas). B\xE9, suposo
@@ -2483,44 +2472,44 @@ MonoBehaviour:
     - "ANNIE: M'agrada que es quedi sense res, per\xF2... no s\xE9, Paul, m'ha semblat
       una escena una mica fluixa. Esperava una mica m\xE9s d'imaginaci\xF3 per la
       teva part.\r\n  "
-  - idea: 4
-    pista: 3
+  - idea: 2
+    pista: 4
     lines:
     - "ANNIE: No Paul NO! Com pots ser capa\xE7 de destrossar-li la vida a l'\xFAnic
       home que ha tractat a la Misery com D\xE9u mana?! Com se t'acut?!  "
     - "ANNIE: Veig que a mesura que passa el temps, PITJORS IDEES TENS. Perqu\xE8
       siguis conscient a la pr\xF2xima, jo si t\u2019ensenyar\xE9 com es sent quan
       alg\xFA et destrossa la vida! "
-  - idea: 4
-    pista: 3
+  - idea: 2
+    pista: 5
     lines:
     - "ANNIE: (Cridant amb f\xFAria) COM GOSES?! La Michelle era perfecta, la germana
       gran que sempre he admirat i que encara m'escolta cada diumenge! I tu destrosses
       el seu record com si no fos res?! ETS ESC\xD2RIA, PAUL! T'ensenyar\xE9 qu\xE8
       \xE9s destrossar de veritat! "
-  - idea: 4
-    pista: 3
+  - idea: 2
+    pista: 6
     lines:
     - "ANNIE: No, no, no! Les meves estimades ampolles de champagne! El Dom P\xE9rignon
       de la meva bodega costa una fortuna i est\xE0 molt ben cuidat! Com pots escriure
       una salvatjada aix\xED?! No tens gust, Paul, no tens ni idea de res! No serveixes
       per res! "
-  - idea: 4
-    pista: 3
+  - idea: 2
+    pista: 7
     lines:
     - "ANNIE: (Rient emocionada) Oh, s\xED, Paul, s\xED! Que es faci miques aquest
       local fastig\xF3s! Nom\xE9s venen ver\xED ple de gluten al qual soc al\xB7l\xE8rgica!
       Has tingut una idea meravellosa, estic molt orgullosa de tu!\r\n "
-  - idea: 4
-    pista: 3
+  - idea: 2
+    pista: 8
     lines:
     - "ANNIE: (Desconcertada) Per qu\xE8 faries aix\xF2?! La m\xFAsica d'en B.B.
       King \xE9s meravellosa! La seva expressivitat\u2026 els meravellosos bendings\u2026
       m\u2019encanta! \xC9s l'\xFAnica cosa que em calma\u2026 I tu ho destrosses?!  "
     - "ANNIE: No tens cap mena de compassi\xF3, Paul Sheldon! Far\xE9 que cridis
       fins que sonis com una d'aquelles guitarres! "
-  - idea: 4
-    pista: 3
+  - idea: 2
+    pista: 9
     lines:
     - "ANNIE: (Amb to triomfal) Hahaha! Que es cremi aquest male\xEFt taulell on
       sempre acabo perdent! Un joc est\xFApid per a gent arrogant que es creu superior!

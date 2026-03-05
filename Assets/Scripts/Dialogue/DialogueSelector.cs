@@ -18,7 +18,7 @@ public class DialogueSelector : MonoBehaviour
     [SerializeField] private string[] dialogueInicial;   // Bucle 1, sempre igual
     [SerializeField] private DialogueCase[] dialogueCases; // Un per cada combinació possible
 
-    void Awake()
+    void Start()
     {
         string[] linesToUse;
 
