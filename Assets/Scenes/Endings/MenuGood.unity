@@ -178,7 +178,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "L'Annie ha marxat de casa, i ha deixat les portes obertes de bat a bat.
     Has aprofitat la seva confian\xE7a, i has aconseguit fugir. Gaudeix de la teva
-    llibertat"
+    llibertat."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 38b570d411f4cb04bb20200a466ffabb, type: 2}
   m_sharedMaterial: {fileID: 3369192378838257518, guid: 38b570d411f4cb04bb20200a466ffabb, type: 2}

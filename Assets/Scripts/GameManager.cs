@@ -1,5 +1,4 @@
-﻿
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
@@ -52,6 +51,12 @@ public class GameManager : MonoBehaviour
     {
         ultimCanvi = new Canvi(idea, pista);
         bucle++;
+        if (ultimCanvi.idea == Idea.Reviure && ultimCanvi.pista == Pista.Misery) salut++;
+        if (ultimCanvi.idea == Idea.Destrossar && ultimCanvi.pista == Pista.John) salut++;
+        if (ultimCanvi.idea == Idea.Destrossar && ultimCanvi.pista == Pista.Tocadiscs) salut--;
+        if (ultimCanvi.idea == Idea.Destrossar && ultimCanvi.pista == Pista.Misery) salut--;
+        if (ultimCanvi.idea == Idea.Destrossar && ultimCanvi.pista == Pista.Ian) salut++;
+        if (ultimCanvi.idea == Idea.Matar && ultimCanvi.pista == Pista.Misery) salut -= 6;
     }
 
     // Canvi fet a la ronda anterior
@@ -102,7 +107,6 @@ public class GameManager : MonoBehaviour
         if (Keyboard.current.digit2Key.wasPressedThisFrame) LoadPlatforms();
         if (Keyboard.current.digit3Key.wasPressedThisFrame) LoadExploration();
         if (Keyboard.current.digit4Key.wasPressedThisFrame) LoadBook();
-        if (Keyboard.current.digit5Key.wasPressedThisFrame) RegistrarCanvi(Idea.Reviure, Pista.Misery);
         if (Keyboard.current.digit6Key.wasPressedThisFrame) LoadChoose();
         if (Keyboard.current.digit7Key.wasPressedThisFrame) LoadBad();
         if (Keyboard.current.digit8Key.wasPressedThisFrame) LoadNeutral();

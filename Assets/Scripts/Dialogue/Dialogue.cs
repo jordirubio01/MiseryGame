@@ -101,6 +101,7 @@ public class Dialogue : MonoBehaviour
         {
             didDialogueStart = false;
             dialoguePanel.SetActive(false);
+            if (GameManager.bucle > 1) levelexit.NextSceneName = "Choose";
             levelexit.ExitLevel();
         }
     }
