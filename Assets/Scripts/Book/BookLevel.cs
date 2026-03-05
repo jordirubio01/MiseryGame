@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class BookSceneSetup : MonoBehaviour
 {
-    public string backgroundImageName = "Book"; // Pon aquí el nombre de tu imagen en Resources (sin extensión)
+    public string backgroundImageName = "Book";
 
     void Start()
     {

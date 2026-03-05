@@ -30,10 +30,10 @@ public class GameManager : MonoBehaviour
         John,
         Ian,
         MrSheldon,
-        Gravadora,
+        Michelle,
         DomPerignon,
-        Informe,
-        Tocadiscs,
+        Cafeteria,
+        Concert,
         Escacs
     }
 
@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
         bucle++;
         if (ultimCanvi.idea == Idea.Reviure && ultimCanvi.pista == Pista.Misery) salut++;
         if (ultimCanvi.idea == Idea.Destrossar && ultimCanvi.pista == Pista.John) salut++;
-        if (ultimCanvi.idea == Idea.Destrossar && ultimCanvi.pista == Pista.Tocadiscs) salut--;
+        if (ultimCanvi.idea == Idea.Destrossar && ultimCanvi.pista == Pista.Cafeteria) salut--;
         if (ultimCanvi.idea == Idea.Destrossar && ultimCanvi.pista == Pista.Misery) salut--;
         if (ultimCanvi.idea == Idea.Destrossar && ultimCanvi.pista == Pista.Ian) salut++;
         if (ultimCanvi.idea == Idea.Matar && ultimCanvi.pista == Pista.Misery) salut -= 6;
@@ -134,6 +134,8 @@ public class GameManager : MonoBehaviour
         foreach (Idea idea in System.Enum.GetValues(typeof(Idea)))
             idees[idea] = false;
 
+        idees[Idea.Reviure] = true;
+        idees[Idea.Destrossar] = true;
 
         foreach (Pista pista in System.Enum.GetValues(typeof(Pista)))
             pistes[pista] = true;

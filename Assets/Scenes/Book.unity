@@ -230,7 +230,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Casar
+  m_text: Casar amb Misery
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 38b570d411f4cb04bb20200a466ffabb, type: 2}
   m_sharedMaterial: {fileID: 3369192378838257518, guid: 38b570d411f4cb04bb20200a466ffabb, type: 2}
@@ -693,7 +693,7 @@ MonoBehaviour:
   actionText: {fileID: 969425510}
   objectsText: {fileID: 0}
   tipoBoton: 0
-  ideaNecesaria: 7
+  ideaNecesaria: 8
   pistaNecesaria: 0
 --- !u!114 &121011012
 MonoBehaviour:
@@ -1562,7 +1562,7 @@ MonoBehaviour:
   objectsText: {fileID: 871424031}
   tipoBoton: 1
   ideaNecesaria: 0
-  pistaNecesaria: 6
+  pistaNecesaria: 7
 --- !u!114 &524305233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1712,7 +1712,7 @@ MonoBehaviour:
   actionText: {fileID: 969425510}
   objectsText: {fileID: 0}
   tipoBoton: 0
-  ideaNecesaria: 6
+  ideaNecesaria: 7
   pistaNecesaria: 0
 --- !u!114 &552808320
 MonoBehaviour:
@@ -1864,7 +1864,7 @@ MonoBehaviour:
   objectsText: {fileID: 871424031}
   tipoBoton: 1
   ideaNecesaria: 0
-  pistaNecesaria: 8
+  pistaNecesaria: 9
 --- !u!114 &588662199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2014,7 +2014,7 @@ MonoBehaviour:
   actionText: {fileID: 969425510}
   objectsText: {fileID: 0}
   tipoBoton: 0
-  ideaNecesaria: 5
+  ideaNecesaria: 6
   pistaNecesaria: 0
 --- !u!114 &627277974
 MonoBehaviour:
@@ -2221,7 +2221,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tocadiscs
+  m_text: Concert de Blues
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 38b570d411f4cb04bb20200a466ffabb, type: 2}
   m_sharedMaterial: {fileID: 3369192378838257518, guid: 38b570d411f4cb04bb20200a466ffabb, type: 2}
@@ -2491,7 +2491,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: John
+  m_text: Noble John
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 38b570d411f4cb04bb20200a466ffabb, type: 2}
   m_sharedMaterial: {fileID: 3369192378838257518, guid: 38b570d411f4cb04bb20200a466ffabb, type: 2}
@@ -2989,7 +2989,7 @@ MonoBehaviour:
   objectsText: {fileID: 0}
   tipoBoton: 0
   ideaNecesaria: 0
-  pistaNecesaria: 0
+  pistaNecesaria: 6
 --- !u!114 &879245653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3146,7 +3146,7 @@ MonoBehaviour:
   objectsText: {fileID: 871424031}
   tipoBoton: 1
   ideaNecesaria: 0
-  pistaNecesaria: 1
+  pistaNecesaria: 2
 --- !u!114 &899305674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3434,7 +3434,7 @@ MonoBehaviour:
   objectsText: {fileID: 871424031}
   tipoBoton: 1
   ideaNecesaria: 0
-  pistaNecesaria: 7
+  pistaNecesaria: 8
 --- !u!114 &977691362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3585,7 +3585,7 @@ MonoBehaviour:
   objectsText: {fileID: 871424031}
   tipoBoton: 1
   ideaNecesaria: 0
-  pistaNecesaria: 3
+  pistaNecesaria: 4
 --- !u!114 &989299974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4034,7 +4034,7 @@ MonoBehaviour:
   actionText: {fileID: 969425510}
   objectsText: {fileID: 0}
   tipoBoton: 0
-  ideaNecesaria: 1
+  ideaNecesaria: 2
   pistaNecesaria: 0
 --- !u!114 &1040172371
 MonoBehaviour:
@@ -4186,7 +4186,7 @@ MonoBehaviour:
   objectsText: {fileID: 871424031}
   tipoBoton: 1
   ideaNecesaria: 0
-  pistaNecesaria: 0
+  pistaNecesaria: 1
 --- !u!114 &1083853063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4336,7 +4336,7 @@ MonoBehaviour:
   actionText: {fileID: 969425510}
   objectsText: {fileID: 0}
   tipoBoton: 0
-  ideaNecesaria: 8
+  ideaNecesaria: 9
   pistaNecesaria: 0
 --- !u!114 &1135934098
 MonoBehaviour:
@@ -4543,7 +4543,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Misery
+  m_text: Misery Chastain
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 38b570d411f4cb04bb20200a466ffabb, type: 2}
   m_sharedMaterial: {fileID: 3369192378838257518, guid: 38b570d411f4cb04bb20200a466ffabb, type: 2}
@@ -5154,7 +5154,7 @@ MonoBehaviour:
   actionText: {fileID: 969425510}
   objectsText: {fileID: 0}
   tipoBoton: 0
-  ideaNecesaria: 0
+  ideaNecesaria: 1
   pistaNecesaria: 0
 --- !u!1 &1264061864
 GameObject:
@@ -5331,7 +5331,7 @@ MonoBehaviour:
   actionText: {fileID: 969425510}
   objectsText: {fileID: 0}
   tipoBoton: 0
-  ideaNecesaria: 4
+  ideaNecesaria: 5
   pistaNecesaria: 0
 --- !u!114 &1293399792
 MonoBehaviour:
@@ -5538,7 +5538,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Gravadora
+  m_text: Michelle
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 38b570d411f4cb04bb20200a466ffabb, type: 2}
   m_sharedMaterial: {fileID: 3369192378838257518, guid: 38b570d411f4cb04bb20200a466ffabb, type: 2}
@@ -5674,7 +5674,7 @@ MonoBehaviour:
   objectsText: {fileID: 871424031}
   tipoBoton: 1
   ideaNecesaria: 0
-  pistaNecesaria: 5
+  pistaNecesaria: 6
 --- !u!114 &1402162037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5825,7 +5825,7 @@ MonoBehaviour:
   objectsText: {fileID: 871424031}
   tipoBoton: 1
   ideaNecesaria: 0
-  pistaNecesaria: 4
+  pistaNecesaria: 5
 --- !u!114 &1415900504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5976,7 +5976,7 @@ MonoBehaviour:
   objectsText: {fileID: 871424031}
   tipoBoton: 1
   ideaNecesaria: 0
-  pistaNecesaria: 2
+  pistaNecesaria: 3
 --- !u!114 &1416190620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6260,7 +6260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9607843, g: 0.93267655, b: 0.22352937, a: 1}
+  m_Color: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6396,7 +6396,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Separar
+  m_text: Separar de Misery
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 38b570d411f4cb04bb20200a466ffabb, type: 2}
   m_sharedMaterial: {fileID: 3369192378838257518, guid: 38b570d411f4cb04bb20200a466ffabb, type: 2}
@@ -6673,7 +6673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9607843, g: 0.9339623, b: 0.22352941, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6788,7 +6788,7 @@ MonoBehaviour:
   objectsText: {fileID: 0}
   tipoBoton: 0
   ideaNecesaria: 0
-  pistaNecesaria: 0
+  pistaNecesaria: 9
 --- !u!114 &1788304212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6979,7 +6979,7 @@ MonoBehaviour:
   objectsText: {fileID: 0}
   tipoBoton: 0
   ideaNecesaria: 0
-  pistaNecesaria: 0
+  pistaNecesaria: 7
 --- !u!114 &1824331214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7000,7 +7000,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Informe m\xE8dic"
+  m_text: "Cafeteria Pa i Caf\xE8"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 38b570d411f4cb04bb20200a466ffabb, type: 2}
   m_sharedMaterial: {fileID: 3369192378838257518, guid: 38b570d411f4cb04bb20200a466ffabb, type: 2}
@@ -7328,7 +7328,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Reproduir
+  m_text: Play
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 38b570d411f4cb04bb20200a466ffabb, type: 2}
   m_sharedMaterial: {fileID: 3369192378838257518, guid: 38b570d411f4cb04bb20200a466ffabb, type: 2}
@@ -7463,7 +7463,7 @@ MonoBehaviour:
   actionText: {fileID: 969425510}
   objectsText: {fileID: 0}
   tipoBoton: 0
-  ideaNecesaria: 2
+  ideaNecesaria: 3
   pistaNecesaria: 0
 --- !u!114 &1884813239
 MonoBehaviour:
@@ -7614,7 +7614,7 @@ MonoBehaviour:
   actionText: {fileID: 969425510}
   objectsText: {fileID: 0}
   tipoBoton: 0
-  ideaNecesaria: 3
+  ideaNecesaria: 4
   pistaNecesaria: 0
 --- !u!114 &1896669858
 MonoBehaviour:
