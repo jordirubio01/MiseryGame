@@ -51,7 +51,6 @@ public class GameManager : MonoBehaviour
     {
         ultimCanvi = new Canvi(idea, pista);
         bucle++;
-        LoadDialogue();
     }
 
     // Canvi fet a la ronda anterior
@@ -97,11 +96,15 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (Keyboard.current.digit0Key.wasPressedThisFrame) SceneManager.LoadScene("MainMenu");
+        if (Keyboard.current.digit0Key.wasPressedThisFrame) LoadMenu();
         if (Keyboard.current.digit1Key.wasPressedThisFrame) LoadDialogue();
         if (Keyboard.current.digit2Key.wasPressedThisFrame) LoadPlatforms();
         if (Keyboard.current.digit3Key.wasPressedThisFrame) LoadExploration();
         if (Keyboard.current.digit4Key.wasPressedThisFrame) LoadBook();
+        if (Keyboard.current.digit6Key.wasPressedThisFrame) LoadChoose();
+        if (Keyboard.current.digit7Key.wasPressedThisFrame) LoadBad();
+        if (Keyboard.current.digit8Key.wasPressedThisFrame) LoadNeutral();
+        if (Keyboard.current.digit9Key.wasPressedThisFrame) LoadGood();
         if (Keyboard.current.numpadPlusKey.wasPressedThisFrame && salut < 6)
         {
             salut += 1;
@@ -129,6 +132,10 @@ public class GameManager : MonoBehaviour
         ultimCanvi = null;
     }
 
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
     public void LoadDialogue()
     {
         SceneManager.LoadScene("Dialogue");
@@ -144,8 +151,42 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Exploration");
     }
 
+    public void LoadChoose()
+    {
+        SceneManager.LoadScene("Choose");
+    }
     public void LoadBook()
     {
         SceneManager.LoadScene("Book");
+    }
+
+    public void LoadBad()
+    {
+        SceneManager.LoadScene("EndingBad");
+    }
+
+    public void LoadNeutral()
+    {
+        SceneManager.LoadScene("EndingNeutral");
+    }
+
+    public void LoadGood()
+    {
+        SceneManager.LoadScene("EndingGood");
+    }
+
+    public void LoadBadMenu()
+    {
+        SceneManager.LoadScene("MenuBad");
+    }
+
+    public void LoadNeutralMenu()
+    {
+        SceneManager.LoadScene("MenuNeutral");
+    }
+
+    public void LoadGoodMenu()
+    {
+        SceneManager.LoadScene("MenuGood");
     }
 }

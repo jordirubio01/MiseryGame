@@ -1908,7 +1908,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -117, y: -73}
+  m_AnchoredPosition: {x: -117, y: -50.000015}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &146854444
@@ -4955,6 +4955,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: pista
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: unlockType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: description
       value: "Sembla una foto de fam\xEDlia...\\n\"DaddY JohN\"  \"MiCHELLE\" \"ME\"
         \"MoM\""
@@ -5852,7 +5860,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -180, y: -72}
+  m_AnchoredPosition: {x: -180, y: -49.000015}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &393165111
@@ -6506,6 +6514,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: pista
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: unlockType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: description
       value: "Sembla una foto de fam\xEDlia...\\n\"DaddY JohN\"  \"MiCHELLE\" \"ME\"
         \"MoM\""
@@ -6649,7 +6665,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -304, y: -71}
+  m_AnchoredPosition: {x: -304, y: -48.000015}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &431028338
@@ -8896,6 +8912,14 @@ PrefabInstance:
     - target: {fileID: 1857693418646380752, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: pista
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: unlockType
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: description
@@ -11291,6 +11315,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: pista
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: unlockType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: description
       value: "He trobat un document llargu\xEDssim... \"...a efectes legals, es fa
         constar que el senyor John Wilkes procedeix a desheretar la senyoreta Annie
@@ -11398,6 +11430,67 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+--- !u!1 &808495965
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 808495968}
+  - component: {fileID: 808495967}
+  - component: {fileID: 808495966}
+  m_Layer: 0
+  m_Name: FadeOut
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &808495966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808495965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04cdf37e409cb624387089b8c483ba4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelExit
+  NextSceneName: Book
+  fadeOut: {fileID: 808495967}
+--- !u!114 &808495967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808495965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d0af4c07d37ba4e9cf826ef4422604, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FadeOut
+  fadeImage: {fileID: 1312981863}
+  fadeDuration: 2
+--- !u!4 &808495968
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808495965}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 257.6195, y: 105.1522, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &833339799
 GameObject:
   m_ObjectHideFlags: 0
@@ -11728,6 +11821,14 @@ PrefabInstance:
     - target: {fileID: 1857693418646380752, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: pista
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: unlockType
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: description
@@ -14339,7 +14440,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -241, y: -72}
+  m_AnchoredPosition: {x: -241, y: -49.000015}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1100846581
@@ -14710,6 +14811,14 @@ PrefabInstance:
     - target: {fileID: 1857693418646380752, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: pista
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: unlockType
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: description
@@ -30465,6 +30574,81 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1312981861
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1312981862}
+  - component: {fileID: 1312981864}
+  - component: {fileID: 1312981863}
+  m_Layer: 0
+  m_Name: Black
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1312981862
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312981861}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.1729293, y: 2.1729293, z: 2.1729293}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1331902697}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0.000030517578}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1312981863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312981861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1312981864
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312981861}
+  m_CullTransparentMesh: 1
 --- !u!1 &1316880214
 GameObject:
   m_ObjectHideFlags: 0
@@ -30708,6 +30892,7 @@ RectTransform:
   - {fileID: 1476172621}
   - {fileID: 1268037352}
   - {fileID: 1725042038}
+  - {fileID: 1312981862}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -30923,7 +31108,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -56, y: -73}
+  m_AnchoredPosition: {x: -56, y: -50.000015}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1379279050
@@ -31252,6 +31437,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfb51e3054d0f604aba0a921b13d80e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
+  unlockType: 2
+  idea: 0
+  pista: 0
   RequireKeyPress: 1
   NextLevelButton: 0
   description: "L'Annie t\xE9 un porc a casa!? T\xE9 una xapa en forma de cor, on
@@ -31401,6 +31589,14 @@ PrefabInstance:
     - target: {fileID: 1857693418646380752, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: pista
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: unlockType
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: description
@@ -37752,6 +37948,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: pista
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: unlockType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: description
       value: "L'Annie t\xE9 la bodega plena de vi i d'ampolles de Dom P\xE9rignon,
         molt ben cuidades."
@@ -42201,6 +42405,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: pista
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: description
       value: "Sembla una foto de fam\xEDlia...\\n\"DaddY JohN\"  \"MiCHELLE\" \"ME\"
         \"MoM\""
@@ -43011,8 +43219,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -825.62024, y: 335.46204}
-  m_SizeDelta: {x: 170.7598, y: 49.9999}
+  m_AnchoredPosition: {x: -795.8797, y: 368}
+  m_SizeDelta: {x: 230.241, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1725042039
 MonoBehaviour:
@@ -43028,6 +43236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CountdownTimer
   timerText: {fileID: 1725042040}
   startMinutes: 1
+  levelexit: {fileID: 808495966}
 --- !u!114 &1725042040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43075,8 +43284,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -45530,6 +45739,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: pista
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: unlockType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: description
       value: "\"Mr Sheldon x Miss Chastain\", un fanfic empalag\xF3s escrit per l'Annie.
         \xC9s evident que est\xE0 obsessionada amb mi i la meva hist\xF2ria..."
@@ -46565,7 +46782,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -365, y: -71}
+  m_AnchoredPosition: {x: -365, y: -48}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2061741040
@@ -52399,6 +52616,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: pista
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: unlockType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: description
       value: "Un vinil de BB King... Sembla que agrada a l'Annie, perqu\xE8 est\xE0
         for\xE7a ratllat."
@@ -52529,3 +52754,4 @@ SceneRoots:
   - {fileID: 1675224264}
   - {fileID: 1331902697}
   - {fileID: 889810847}
+  - {fileID: 808495968}

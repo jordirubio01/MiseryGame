@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class BookManager : MonoBehaviour
 {
+    public LevelExit levelexit;
+
     private GameManager.Idea ideaEscollida;
     private GameManager.Pista pistaEscollida;
     private bool ideaSeleccionada = false;

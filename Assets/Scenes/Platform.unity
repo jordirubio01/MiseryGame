@@ -1023,6 +1023,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfb51e3054d0f604aba0a921b13d80e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
+  unlockType: 1
+  idea: 1
+  pista: 0
   RequireKeyPress: 1
   NextLevelButton: 0
   description: "En un relat de detectius que vaig escriure fa temps, el protagonista
@@ -2212,6 +2215,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfb51e3054d0f604aba0a921b13d80e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
+  unlockType: 1
+  idea: 0
+  pista: 0
   RequireKeyPress: 1
   NextLevelButton: 1
   description: "Recordo una novel\xB7la polic\xEDaca, on un personatge va tornar

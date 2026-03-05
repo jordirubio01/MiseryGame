@@ -3,6 +3,19 @@ using UnityEngine.InputSystem;
 
 public class InteractableObject : MonoBehaviour
 {
+    public enum UnlockType
+    {
+        None,
+        Idea,
+        Pista
+    }
+
+    public UnlockType unlockType = UnlockType.None;
+    bool unlocked = false;
+
+    public GameManager.Idea idea;
+    public GameManager.Pista pista;
+
     public bool RequireKeyPress = true;
     public bool NextLevelButton = false;
 
@@ -48,6 +61,25 @@ public class InteractableObject : MonoBehaviour
         // Activar/desactivar botó de següent nivell
         if (ObjectDescriptionUI.Instance.NextLevelButton != null)
             ObjectDescriptionUI.Instance.NextLevelButton.gameObject.SetActive(NextLevelButton);
+
+        Unlock();
+    }
+
+    void Unlock()
+    {
+        if (unlocked) return;
+
+        if (unlockType == UnlockType.Idea)
+        {
+            GameManager.idees[idea] = true;
+            Debug.Log("Idea desbloquejada: " + idea);
+        }
+
+        if (unlockType == UnlockType.Pista)
+        {
+            GameManager.pistes[pista] = true;
+            Debug.Log("Pista desbloquejada: " + pista);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)

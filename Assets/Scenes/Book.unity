@@ -176,7 +176,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &10648209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,7 +193,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &10648210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,7 +210,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &10648211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,7 +367,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &45226843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,7 +384,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &45226844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -406,7 +401,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &45226845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -701,7 +695,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 7
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &121011012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -796,6 +789,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 121011009}
   m_CullTransparentMesh: 1
+--- !u!1 &264743679
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 264743682}
+  - component: {fileID: 264743681}
+  - component: {fileID: 264743680}
+  m_Layer: 0
+  m_Name: FadeOut
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &264743680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264743679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04cdf37e409cb624387089b8c483ba4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelExit
+  NextSceneName: Dialogue
+  fadeOut: {fileID: 264743681}
+--- !u!114 &264743681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264743679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d0af4c07d37ba4e9cf826ef4422604, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FadeOut
+  fadeImage: {fileID: 2084381505}
+  fadeDuration: 2
+--- !u!4 &264743682
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264743679}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 257.6195, y: 105.1522, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &337542091
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,7 +907,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &337542094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -871,7 +924,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &337542095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -889,7 +941,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &337542096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1210,7 +1261,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 440691920}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 264743680}
+        m_TargetAssemblyTypeName: LevelExit, Assembly-CSharp
+        m_MethodName: ExitLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &440691920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1321,7 +1384,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &483581110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1339,7 +1401,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &483581111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1357,7 +1418,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &483581112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1515,7 +1575,6 @@ MonoBehaviour:
   tipoBoton: 1
   ideaNecesaria: 0
   pistaNecesaria: 6
-  bookManager: {fileID: 0}
 --- !u!114 &524305233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1667,7 +1726,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 6
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &552808320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1819,7 +1877,6 @@ MonoBehaviour:
   tipoBoton: 1
   ideaNecesaria: 0
   pistaNecesaria: 8
-  bookManager: {fileID: 0}
 --- !u!114 &588662199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1971,7 +2028,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 5
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &627277974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2123,7 +2179,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &654380869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2141,7 +2196,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &654380870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2159,7 +2213,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &654380871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2396,7 +2449,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &725187246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2414,7 +2466,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &725187247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2432,7 +2483,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &725187248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2590,7 +2640,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &728879806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2608,7 +2657,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &728879807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2626,7 +2674,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &728879808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2921,7 +2968,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &879245651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2939,7 +2985,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &879245652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2957,7 +3002,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &879245653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3115,7 +3159,6 @@ MonoBehaviour:
   tipoBoton: 1
   ideaNecesaria: 0
   pistaNecesaria: 1
-  bookManager: {fileID: 0}
 --- !u!114 &899305674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3404,7 +3447,6 @@ MonoBehaviour:
   tipoBoton: 1
   ideaNecesaria: 0
   pistaNecesaria: 7
-  bookManager: {fileID: 0}
 --- !u!114 &977691362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3556,7 +3598,6 @@ MonoBehaviour:
   tipoBoton: 1
   ideaNecesaria: 0
   pistaNecesaria: 3
-  bookManager: {fileID: 0}
 --- !u!114 &989299974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3751,6 +3792,7 @@ RectTransform:
   - {fileID: 969425509}
   - {fileID: 871424030}
   - {fileID: 440691918}
+  - {fileID: 2084381507}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3815,7 +3857,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1017495364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3833,7 +3874,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1017495365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3851,7 +3891,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1017495366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4009,7 +4048,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 1
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1040172371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4161,7 +4199,6 @@ MonoBehaviour:
   tipoBoton: 1
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1083853063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4313,7 +4350,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 8
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1135934098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4465,7 +4501,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1160033994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4483,7 +4518,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1160033995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4501,7 +4535,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1160033996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4759,7 +4792,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1225033263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4777,7 +4809,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1225033264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4795,7 +4826,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!1 &1233748238
 GameObject:
   m_ObjectHideFlags: 0
@@ -4853,7 +4883,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1233748241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4871,7 +4900,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1233748242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4889,7 +4917,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1233748243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5141,7 +5168,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!1 &1264061864
 GameObject:
   m_ObjectHideFlags: 0
@@ -5171,6 +5197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a21bf639227dba469e0a70508aae647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  levelexit: {fileID: 264743680}
 --- !u!4 &1264061866
 Transform:
   m_ObjectHideFlags: 0
@@ -5318,7 +5345,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 4
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1293399792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5470,7 +5496,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1388164511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5488,7 +5513,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1388164512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5506,7 +5530,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1388164513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5664,7 +5687,6 @@ MonoBehaviour:
   tipoBoton: 1
   ideaNecesaria: 0
   pistaNecesaria: 5
-  bookManager: {fileID: 0}
 --- !u!114 &1402162037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5816,7 +5838,6 @@ MonoBehaviour:
   tipoBoton: 1
   ideaNecesaria: 0
   pistaNecesaria: 4
-  bookManager: {fileID: 0}
 --- !u!114 &1415900504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5968,7 +5989,6 @@ MonoBehaviour:
   tipoBoton: 1
   ideaNecesaria: 0
   pistaNecesaria: 2
-  bookManager: {fileID: 0}
 --- !u!114 &1416190620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6334,7 +6354,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1672647997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6352,7 +6371,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1672647998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6370,7 +6388,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1672647999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6750,7 +6767,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1788304210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6768,7 +6784,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1788304211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6786,7 +6801,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1788304212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6944,7 +6958,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1824331212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6962,7 +6975,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1824331213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6980,7 +6992,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1824331214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7140,8 +7151,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Confirmar
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 38b570d411f4cb04bb20200a466ffabb, type: 2}
+  m_sharedMaterial: {fileID: 3369192378838257518, guid: 38b570d411f4cb04bb20200a466ffabb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7275,7 +7286,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1854709947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7293,7 +7303,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1854709948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7311,7 +7320,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1854709949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7469,7 +7477,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 2
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1884813239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7621,7 +7628,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 3
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1896669858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7773,7 +7779,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1989862097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7791,7 +7796,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1989862098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7809,7 +7813,6 @@ MonoBehaviour:
   tipoBoton: 0
   ideaNecesaria: 0
   pistaNecesaria: 0
-  bookManager: {fileID: 0}
 --- !u!114 &1989862099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7910,6 +7913,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1989862094}
   m_CullTransparentMesh: 1
+--- !u!1 &2084381504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2084381507}
+  - component: {fileID: 2084381506}
+  - component: {fileID: 2084381505}
+  m_Layer: 0
+  m_Name: Black
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2084381505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084381504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2084381506
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084381504}
+  m_CullTransparentMesh: 1
+--- !u!224 &2084381507
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084381504}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.2505659, y: 1.2505659, z: 1.2505659}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1006118147}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 815.00024, y: 376.50867}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -7919,3 +7997,4 @@ SceneRoots:
   - {fileID: 712539173}
   - {fileID: 1470776570}
   - {fileID: 1264061866}
+  - {fileID: 264743682}

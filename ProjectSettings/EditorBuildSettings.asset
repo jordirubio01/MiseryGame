@@ -11,13 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: bca5ada2621bedb4ea6231e653fddc48
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Core.unity
     guid: 152333d516fbb894cb44f9725b5f7b4d
   - enabled: 1
     path: Assets/Scenes/Dialogue.unity
     guid: a3bdd10aeab5e4642aef60260cf46e48
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Platforms.unity
     guid: a9d075145c303664aa378246101c905f
   - enabled: 1
@@ -32,6 +32,27 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Endings/EndingBad.unity
+    guid: 78bc16e169e7f2e479d8523caf8c376d
+  - enabled: 1
+    path: Assets/Scenes/Endings/EndingGood.unity
+    guid: 5f8a58e0a50e0e245a7f493a05101dbc
+  - enabled: 1
+    path: Assets/Scenes/Endings/EndingNeutral.unity
+    guid: 1d408b23443f72a469d04d5f55719f91
+  - enabled: 1
+    path: Assets/Scenes/Endings/MenuGood.unity
+    guid: dbaf6f4db8cc3f54aa001d689fc50291
+  - enabled: 1
+    path: Assets/Scenes/Endings/MenuBad.unity
+    guid: 432dd1fddfbc07347ac22acd178ed1ac
+  - enabled: 1
+    path: Assets/Scenes/Endings/MenuNeutral.unity
+    guid: 6a9cde484fa5c424982377b5212ae495
+  - enabled: 1
+    path: Assets/Scenes/Endings/Choose.unity
+    guid: faed1e28ecfadbb408b4a2051cb14e30
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
