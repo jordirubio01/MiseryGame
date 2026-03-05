@@ -13,8 +13,10 @@ public class PaulMovement : MonoBehaviour
     private bool Grounded;
     private Vector3 InitialPosition;
 
-    private AudioSource audioSource;
+    [SerializeField] private AudioSource footstepSource;
+    [SerializeField] private AudioSource fxSource;
     public AudioClip FootstepClip;
+    public AudioClip JumpClip;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,7 +24,6 @@ public class PaulMovement : MonoBehaviour
         Rigidbody2D = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
         InitialPosition = transform.position;
-        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -62,24 +63,27 @@ public class PaulMovement : MonoBehaviour
         // So de passos
         if (Grounded && Horizontal != 0)
         {
-            if (!audioSource.isPlaying)
+            if (!footstepSource.isPlaying && FootstepClip != null)
             {
-                audioSource.clip = FootstepClip;
-                audioSource.loop = true;
-                audioSource.Play();
+                footstepSource.clip = FootstepClip;
+                footstepSource.loop = true;
+                footstepSource.Play();
             }
         }
         else
         {
-            if (audioSource.isPlaying)
+            if (footstepSource.isPlaying)
             {
-                audioSource.Stop();
+                footstepSource.Stop();
             }
         }
     }
 
     void Jump()
     {
+        // Sonido de salto
+        if (JumpClip != null && fxSource != null) fxSource.PlayOneShot(JumpClip);
+
         Rigidbody2D.linearVelocity = new Vector2(Rigidbody2D.linearVelocity.x, 0f);
         Rigidbody2D.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
     }

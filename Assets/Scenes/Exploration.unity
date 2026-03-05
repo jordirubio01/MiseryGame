@@ -250,7 +250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1195082587218669780, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1857693418646380752, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: m_Size.x
@@ -288,7 +288,8 @@ PrefabInstance:
       propertyPath: description
       value: "La m\xE0quina d'escriure que m'ha donat l'Annie. Haig d'explorar la
         casa mentre ella no hi sigui, i buscar pistes, noms, objectes per incloure
-        a la hist\xF2ria."
+        a la hist\xF2ria. Per comen\xE7ar, puc intentar sortir al pati, a la planta
+        baixa..."
       objectReference: {fileID: 0}
     - target: {fileID: 2992041255517264544, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: objectSprite
@@ -2147,7 +2148,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: fd1ecec26d57f6b4cbfab0be9950a9aa, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.4
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2875,7 +2876,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1195082587218669780, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1857693418646380752, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: m_Size.x
@@ -4938,6 +4939,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1195082587218669780, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1857693418646380752, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: m_Size.x
       value: 3.99
@@ -6497,6 +6502,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1195082587218669780, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1857693418646380752, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: m_Size.x
       value: 3.99
@@ -7197,7 +7206,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: fd1ecec26d57f6b4cbfab0be9950a9aa, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -8893,6 +8902,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1195082587218669780, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1857693418646380752, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: m_Size.x
       value: 2.68
@@ -9071,7 +9084,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1195082587218669780, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1857693418646380752, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: m_Size.x
@@ -10748,6 +10761,10 @@ PrefabInstance:
       propertyPath: FootstepClip
       value: 
       objectReference: {fileID: 8300000, guid: 39d5cd804b095c54a8c6cd3c9702ffa1, type: 3}
+    - target: {fileID: 4816249787515400346, guid: b521514eb3c38534088dc11ed191265d, type: 3}
+      propertyPath: footstepSource
+      value: 
+      objectReference: {fileID: 736801384}
     - target: {fileID: 6834040908851024170, guid: b521514eb3c38534088dc11ed191265d, type: 3}
       propertyPath: m_Size.x
       value: 0.35438162
@@ -11344,6 +11361,10 @@ PrefabInstance:
       objectReference: {fileID: -6085556290418212972, guid: a5f756c10952ccd43a72a6e54b3a61f8, type: 3}
     - target: {fileID: 347692687361102723, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1195082587218669780, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1857693418646380752, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
@@ -14838,6 +14859,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 347692687361102723, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1195082587218669780, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1857693418646380752, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
@@ -31493,6 +31518,7 @@ MonoBehaviour:
   description: "L'Annie t\xE9 un porc a casa!? T\xE9 una xapa en forma de cor, on
     posa Misery."
   objectSprite: {fileID: 5613222816550356417, guid: 4bbc13e5d952c204882b0c6645cab2d6, type: 3}
+  interactSfx: {fileID: 0}
 --- !u!1 &1401199350
 GameObject:
   m_ObjectHideFlags: 0
@@ -37975,6 +38001,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1195082587218669780, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1857693418646380752, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: m_Size.x
       value: 1.16
@@ -38167,7 +38197,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: fd1ecec26d57f6b4cbfab0be9950a9aa, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.4
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -42436,6 +42466,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1195082587218669780, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1857693418646380752, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: m_Size.x
       value: 3.99
@@ -44937,7 +44971,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1195082587218669780, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1857693418646380752, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: m_Size.x
@@ -45112,7 +45146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1195082587218669780, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1857693418646380752, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: m_Size.x
@@ -45766,6 +45800,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1195082587218669780, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1857693418646380752, guid: 96ffadf6fe54c27498e29923367e887d, type: 3}
       propertyPath: m_Size.x
       value: 3.44
@@ -45945,7 +45983,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: fd1ecec26d57f6b4cbfab0be9950a9aa, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.4
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0

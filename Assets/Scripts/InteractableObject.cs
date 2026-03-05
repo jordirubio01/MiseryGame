@@ -24,6 +24,14 @@ public class InteractableObject : MonoBehaviour
 
     bool playerNear = false;
 
+    public AudioClip interactSfx;
+    AudioSource audioSource;
+
+    void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     void Update()
     {
         if (!playerNear) return;
@@ -57,6 +65,8 @@ public class InteractableObject : MonoBehaviour
 
     void ShowDescription()
     {
+        if (interactSfx != null && audioSource != null) audioSource.PlayOneShot(interactSfx);
+
         ObjectDescriptionUI.Instance.Show(objectSprite, description);
         // Activar/desactivar botó de següent nivell
         if (ObjectDescriptionUI.Instance.NextLevelButton != null)

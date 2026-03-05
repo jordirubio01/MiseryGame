@@ -265,8 +265,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfb51e3054d0f604aba0a921b13d80e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
+  unlockType: 0
+  idea: 0
+  pista: 0
+  RequireKeyPress: 1
+  NextLevelButton: 0
   description: He trobat un nou objecte...
   objectSprite: {fileID: 0}
+  interactSfx: {fileID: 8300000, guid: 76079aca1c217154a910a0b12443be5a, type: 3}
 --- !u!1 &3233994106321760189
 GameObject:
   m_ObjectHideFlags: 0
