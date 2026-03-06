@@ -151,8 +151,8 @@ public class GameManager : MonoBehaviour
         foreach (Idea idea in System.Enum.GetValues(typeof(Idea)))
             idees[idea] = false;
 
-        idees[Idea.Reviure] = true;
-        idees[Idea.Destrossar] = true;
+        //idees[Idea.Reviure] = true;    // Just for testing
+        //idees[Idea.Destrossar] = true; // Just for testing
 
         foreach (Pista pista in System.Enum.GetValues(typeof(Pista)))
             pistes[pista] = true;
