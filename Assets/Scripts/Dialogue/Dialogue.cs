@@ -59,7 +59,6 @@ public class Dialogue : MonoBehaviour
     {
         if (!hasReachedPlayer && !isPlayerInRange)
         {
-            Debug.Log(rb.linearVelocity);
             MoveTowardsPlayer();
         }
     }
@@ -83,7 +82,6 @@ public class Dialogue : MonoBehaviour
 
     private void StartDialogue()
     {
-        Debug.Log($"[Dialogue] StartDialogue - Total línies: {dialogueLines.Length}. Primera: {dialogueLines[0]}");
         didDialogueStart = true;
         dialoguePanel.SetActive(true);
         dialogueMark.SetActive(false);
@@ -141,6 +139,5 @@ public class Dialogue : MonoBehaviour
     public void SetDialogueLines(string[] lines)
     {
         dialogueLines = lines;
-        Debug.Log($"[Dialogue] SetDialogueLines cridat amb {lines.Length} línies. Primera: {lines[0]}");
     }
 }

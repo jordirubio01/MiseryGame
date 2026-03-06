@@ -45,7 +45,6 @@ public class DialogueSelector : MonoBehaviour
         }
 
         // Si no hi ha diàleg específic per aquesta combinació
-        Debug.LogWarning($"[DialogueSelector] No hi ha diàleg per {idea} + {pista}. Usant diàleg inicial.");
-        return dialogueInicial;
+        return new string[] { "El diàleg per aquesta combinació no està creat..." };
     }
 }

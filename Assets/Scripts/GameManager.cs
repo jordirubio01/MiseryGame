@@ -55,10 +55,18 @@ public class GameManager : MonoBehaviour
         ultimCanvi = new Canvi(idea, pista);
         bucle++;
         if (ultimCanvi.idea == Idea.Reviure && ultimCanvi.pista == Pista.Misery) salut++;
-        if (ultimCanvi.idea == Idea.Destrossar && ultimCanvi.pista == Pista.John) salut++;
         if (ultimCanvi.idea == Idea.Destrossar && ultimCanvi.pista == Pista.Cafeteria) salut--;
         if (ultimCanvi.idea == Idea.Destrossar && ultimCanvi.pista == Pista.Misery) salut--;
-        if (ultimCanvi.idea == Idea.Destrossar && ultimCanvi.pista == Pista.Ian) salut++;
+        if (ultimCanvi.idea == Idea.Destrossar && ultimCanvi.pista == Pista.MrSheldon) salut--;
+        if (ultimCanvi.idea == Idea.Destrossar && ultimCanvi.pista == Pista.Escacs) salut++;
+        if (ultimCanvi.idea == Idea.Destrossar && ultimCanvi.pista == Pista.Michelle) salut--;
+        if (ultimCanvi.idea == Idea.Destrossar && ultimCanvi.pista == Pista.DomPerignon) salut--;
+        if (ultimCanvi.idea == Idea.Destrossar && ultimCanvi.pista == Pista.Cafeteria) salut++;
+        if (ultimCanvi.idea == Idea.Destrossar && ultimCanvi.pista == Pista.Concert) salut--;
+        if (ultimCanvi.idea == Idea.Matar && ultimCanvi.pista == Pista.John) salut++;
+        if (ultimCanvi.idea == Idea.Matar && ultimCanvi.pista == Pista.Ian) salut--;
+        if (ultimCanvi.idea == Idea.Matar && ultimCanvi.pista == Pista.MrSheldon) salut--;
+        if (ultimCanvi.idea == Idea.Matar && ultimCanvi.pista == Pista.Michelle) salut++;
         if (ultimCanvi.idea == Idea.Matar && ultimCanvi.pista == Pista.Misery) salut -= 6;
     }
 
@@ -110,7 +118,7 @@ public class GameManager : MonoBehaviour
         if (Keyboard.current.digit2Key.wasPressedThisFrame) LoadPlatforms();
         if (Keyboard.current.digit3Key.wasPressedThisFrame) LoadExploration();
         if (Keyboard.current.digit4Key.wasPressedThisFrame) LoadBook();
-        if (Keyboard.current.digit5Key.wasPressedThisFrame) RegistrarCanvi(Idea.Reviure, Pista.Misery);
+        if (Keyboard.current.digit5Key.wasPressedThisFrame) RegistrarCanvi(Idea.Reproduir, Pista.Escacs);
         if (Keyboard.current.digit6Key.wasPressedThisFrame) LoadChoose();
         if (Keyboard.current.digit7Key.wasPressedThisFrame) LoadBad();
         if (Keyboard.current.digit8Key.wasPressedThisFrame) LoadNeutral();
