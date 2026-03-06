@@ -7,7 +7,7 @@ public class CountdownTimer : MonoBehaviour
     public TextMeshProUGUI timerText;
 
     [Header("Tiempo")]
-    public int startMinutes = 5;
+    public float startMinutes = 5;
 
     public LevelExit levelexit;
 

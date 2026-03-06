@@ -591,7 +591,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &22133495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -886,7 +886,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 179963714}
   Destination3Lives: {fileID: 947851997}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!82 &27196283
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1466,7 +1466,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!82 &127086839
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1754,7 +1754,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &137472523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2014,7 +2014,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &155356822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3168,7 +3168,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &229943039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3745,7 +3745,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &295824021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4017,7 +4017,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &310108938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4289,7 +4289,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &312662733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5135,7 +5135,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &352748288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5407,7 +5407,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &361850999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5710,7 +5710,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &368682754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6080,7 +6080,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 726845130}
   Destination3Lives: {fileID: 13821770}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!82 &394861920
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6326,7 +6326,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &406262709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6920,7 +6920,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!82 &456439207
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7192,7 +7192,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 610026979}
   Destination3Lives: {fileID: 551630550}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!82 &463692267
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7987,7 +7987,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &507433773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8388,7 +8388,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &558697585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8563,7 +8563,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &575989226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9411,7 +9411,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!82 &597651049
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9819,7 +9819,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &630989692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10024,7 +10024,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &646043278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10296,7 +10296,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &657464266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10995,7 +10995,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &749401271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12290,7 +12290,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 162883817}
   Destination3Lives: {fileID: 1807548406}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!82 &896010586
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12562,7 +12562,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 671301068}
   Destination3Lives: {fileID: 362051055}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!82 &904378318
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13759,7 +13759,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &1004676905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14116,7 +14116,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!82 &1027576338
 AudioSource:
   m_ObjectHideFlags: 0
@@ -30254,7 +30254,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &1284090169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30549,7 +30549,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 1325424490}
   Destination3Lives: {fileID: 1111636938}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!82 &1305009003
 AudioSource:
   m_ObjectHideFlags: 0
@@ -31026,7 +31026,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &1354447428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31518,7 +31518,7 @@ MonoBehaviour:
   description: "L'Annie t\xE9 un porc a casa!? T\xE9 una xapa en forma de cor, on
     posa Misery."
   objectSprite: {fileID: 5613222816550356417, guid: 4bbc13e5d952c204882b0c6645cab2d6, type: 3}
-  interactSfx: {fileID: 0}
+  interactSfx: {fileID: 8300000, guid: 76079aca1c217154a910a0b12443be5a, type: 3}
 --- !u!1 &1401199350
 GameObject:
   m_ObjectHideFlags: 0
@@ -37637,7 +37637,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &1524947676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38299,7 +38299,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &1567661704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43145,7 +43145,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &1724839828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43299,10 +43299,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1331902697}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -795.8797, y: 368}
-  m_SizeDelta: {x: 230.241, y: 50}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 460.978, y: -75}
+  m_SizeDelta: {x: 823.957, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1725042039
 MonoBehaviour:
@@ -43317,7 +43317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CountdownTimer
   timerText: {fileID: 1725042040}
-  startMinutes: 1
+  startMinutes: 2
   levelexit: {fileID: 808495966}
 --- !u!114 &1725042040
 MonoBehaviour:
@@ -43366,8 +43366,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 55
+  m_fontSizeBase: 55
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -43472,7 +43472,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &1727894697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43646,7 +43646,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &1731420056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43820,7 +43820,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &1746571665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44168,7 +44168,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &1780956602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44556,7 +44556,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 1918483663}
   Destination3Lives: {fileID: 1430086760}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!82 &1785117363
 AudioSource:
   m_ObjectHideFlags: 0
@@ -45401,7 +45401,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &1905282605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46085,7 +46085,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!114 &1952921021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52551,7 +52551,7 @@ MonoBehaviour:
   Destination2Lives: {fileID: 0}
   Destination3Lives: {fileID: 0}
   RoomCameraFollow: {fileID: 106948020}
-  FadeImage: {fileID: 1476172623}
+  FadeImage: {fileID: 1312981863}
 --- !u!82 &2114848256
 AudioSource:
   m_ObjectHideFlags: 0

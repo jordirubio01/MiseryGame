@@ -123,12 +123,12 @@ public class GameManager : MonoBehaviour
         if (Keyboard.current.digit7Key.wasPressedThisFrame) LoadBad();
         if (Keyboard.current.digit8Key.wasPressedThisFrame) LoadNeutral();
         if (Keyboard.current.digit9Key.wasPressedThisFrame) LoadGood();
-        if (Keyboard.current.numpadPlusKey.wasPressedThisFrame && salut < 6)
+        if ((Keyboard.current.numpadPlusKey.wasPressedThisFrame || Keyboard.current.upArrowKey.wasPressedThisFrame) && salut < 6)
         {
             salut += 1;
             Debug.Log("Salut: " + salut + " | Time: " + Time.time);
         }
-        if (Keyboard.current.numpadMinusKey.wasPressedThisFrame && salut > 0)
+        if ((Keyboard.current.numpadMinusKey.wasPressedThisFrame || Keyboard.current.downArrowKey.wasPressedThisFrame) && salut > 0)
         {
             salut -= 1;
             Debug.Log("Salut: " + salut + " | Time: " + Time.time);
