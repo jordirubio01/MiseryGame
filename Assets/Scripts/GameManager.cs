@@ -133,6 +133,14 @@ public class GameManager : MonoBehaviour
             salut -= 1;
             Debug.Log("Salut: " + salut + " | Time: " + Time.time);
         }
+        // Full screen
+        if (Keyboard.current.f11Key.wasPressedThisFrame)
+        {
+            if (Screen.fullScreenMode == FullScreenMode.MaximizedWindow)
+                Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
+            else
+                Screen.fullScreenMode = FullScreenMode.MaximizedWindow;
+        }
     }
 
     public void ResetVariables()
