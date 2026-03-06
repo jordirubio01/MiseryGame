@@ -1028,7 +1028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
   unlockType: 1
-  idea: 1
+  idea: 2
   pista: 0
   RequireKeyPress: 1
   NextLevelButton: 0
@@ -2684,7 +2684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
   unlockType: 1
-  idea: 0
+  idea: 1
   pista: 0
   RequireKeyPress: 1
   NextLevelButton: 1
