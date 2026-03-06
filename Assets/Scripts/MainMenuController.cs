@@ -14,4 +14,9 @@ public class MainMenuController : MonoBehaviour
         GameManager.Instance.ResetVariables();
         levelexit.ExitLevel();
     }
+    public void Sortir()
+    {
+        Debug.Log("Closing game...");
+        Application.Quit();
+    }
 }
